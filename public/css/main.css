@@ -1,11 +1,35 @@
-/*
-Couleur principale: #F1F1F1
-Couleur secondaire: #FFFFFF
-3e couleur: #BABABA
-*/
-
 :root {
-    --color-main : #f1f1f1;
-    --color-seg : #ffffff;
-    --color-ter : #bababa;
+    --color-main : #f1f1f1; /*Principale*/
+    --color-seg : #ffffff; /*segondaire*/
+    --color-ter : #bababa; /*troisième*/
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+main{
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+#appContainer {
+	margin-top: 150px;
+	margin-bottom: 100px;
+	min-height: 70vh;
+	height: 100%;
 }
