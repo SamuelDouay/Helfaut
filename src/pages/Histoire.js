@@ -1,9 +1,9 @@
 import { Component } from '../components/global';
 import { Page } from './Page';
 
-export class HomePage extends Page {
+export class Histoire extends Page {
 	constructor() {
-		super('Acceuil', 'home');
+		super('Histoire', 'home');
 	}
 
 	mount(element) {
@@ -11,7 +11,7 @@ export class HomePage extends Page {
 		this.children = new Component(
 			'h1',
 			{ name: 'class', value: 'test' },
-			'Home page'
+			'Histoire'
 		);
 		this.element.innerHTML = this.render();
 		this.children.initEvent();

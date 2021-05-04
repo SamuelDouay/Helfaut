@@ -13,7 +13,7 @@ export class Page extends Component {
 	}
 
 	get pageTitle() {
-		return this.#pageTitle + ' | Ma table au resto';
+		return this.#pageTitle + ' | Commune Helfaut';
 	}
 
 	mount(element) {

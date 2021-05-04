@@ -1,0 +1,11 @@
+/*
+Couleur principale: #F1F1F1
+Couleur secondaire: #FFFFFF
+3e couleur: #BABABA
+*/
+
+:root {
+    --color-main : #f1f1f1;
+    --color-seg : #ffffff;
+    --color-ter : #bababa;
+}
