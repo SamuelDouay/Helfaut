@@ -16,5 +16,20 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    color: var(--color-seg);
+}
+
+#image_footer {
+    margin-right: 20px;
+}
+
+#image_footer img{
+    height: 70px;
+}
+
+#contact_footer > *{
+    margin : 0;
+    font-size: 15px;
+    margin-top: 5px;
 }
