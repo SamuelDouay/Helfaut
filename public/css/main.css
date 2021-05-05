@@ -2,6 +2,11 @@
     --color-main : #f1f1f1; /*Principale*/
     --color-seg : #ffffff; /*segondaire*/
     --color-ter : #bababa; /*troisième*/
+	
+	
+    --color-main-darck : #212121; /*Principale*/
+    --color-seg-darck : #181818; /*segondaire*/
+    --color-ter-darck : #BABABA; /*troisième*/
 }
 
 * {
