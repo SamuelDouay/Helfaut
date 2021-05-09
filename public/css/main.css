@@ -4,16 +4,13 @@
     --color-main : #f1f1f1; /*Principale*/
     --color-seg : #ffffff; /*segondaire*/
     --color-ter : #bababa; /*troisième*/
-	
-	
-    --color-main-darck : #212121; /*Principale*/
-    --color-seg-darck : #181818; /*segondaire*/
-    --color-ter-darck : #BABABA; /*troisième*/
+	--color-font : #000;
 }
 
 * {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
+	list-style: none;
 }
 
 html {
@@ -27,6 +24,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	background: var(--color-main);
+	color: var(--color-font);
 }
 
 main{
