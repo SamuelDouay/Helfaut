@@ -6,6 +6,10 @@ export class Histoire extends Page {
 		super('Histoire', 'home');
 	}
 
+	get pageName() {
+		return 'Histoire de la commune';
+	}
+
 	mount(element) {
 		super.mount(element);
 		this.children = new Component(

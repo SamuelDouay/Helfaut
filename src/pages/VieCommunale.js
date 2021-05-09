@@ -3,7 +3,7 @@ import { Page } from './Page';
 
 export class VieCommunale extends Page {
 	constructor() {
-		super('vie_communale', 'home');
+		super('Vie communale', 'home');
 	}
 
 	mount(element) {

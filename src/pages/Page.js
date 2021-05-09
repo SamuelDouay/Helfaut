@@ -3,6 +3,7 @@ import { Component } from '../components/global';
 export class Page extends Component {
 	element;
 	#pageTitle;
+
 	constructor(pageTitle, className, children) {
 		super('section', { name: 'class', value: className }, children);
 		this.#pageTitle = pageTitle;
@@ -14,6 +15,10 @@ export class Page extends Component {
 
 	get pageTitle() {
 		return this.#pageTitle + ' | Commune Helfaut';
+	}
+
+	get pageName() {
+		return this.#pageTitle;
 	}
 
 	mount(element) {

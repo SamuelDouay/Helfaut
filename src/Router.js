@@ -53,6 +53,8 @@ export default class Router {
 			route.page.mount(this.sectionHTMLContent);
 			this.currentPage = route.page;
 			document.querySelector('head title').innerText = route.page.pageTitle;
+			document.querySelector('#contain_header_page_title').innerHTML =
+				route.page.pageName;
 		}
 	}
 

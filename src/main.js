@@ -13,14 +13,6 @@ Router.initRouter(
 );
 
 function handleEventLog(e = null) {
-	//const container = document.querySelector('.container-connexion-profile');
-	/*const components =
-		e?.detail?.logIn || Connnexion.isUserLog()
-			? new UserButton(Connnexion.getInfoLogUser())
-			: new ConnexionButton();
-	container.innerHTML = components.render();
-	components.initEvent();*/
-
 	const light_darck = document.querySelector('#theme_l_d');
 	let darck = false;
 	light_darck.addEventListener('click', e => {

@@ -3,7 +3,7 @@ import { Page } from './Page';
 
 export class Activites extends Page {
 	constructor() {
-		super('activites', 'home');
+		super('Activités', 'home');
 	}
 
 	mount(element) {
