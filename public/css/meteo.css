@@ -1,0 +1,10 @@
+#meteo {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}

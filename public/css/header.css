@@ -107,3 +107,16 @@ header {
 #welcome {
     margin-left: 15px;
 }
+
+#welcome * {
+    margin: 0;
+}
+
+#welcome *:nth-child(1){
+    font-weight: 0;
+    font-size: 22px;
+}
+
+#welcome *:nth-child(2){
+    font-size: 35px;
+}
