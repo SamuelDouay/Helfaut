@@ -13,7 +13,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    background-position: 0% 40%;
+    background-position: 0% 41%;
 }
 
 #header{
@@ -106,4 +106,17 @@ header {
 
 #welcome {
     margin-left: 15px;
+}
+
+#welcome * {
+    margin: 0;
+}
+
+#welcome *:nth-child(1){
+    font-weight: 0;
+    font-size: 22px;
+}
+
+#welcome *:nth-child(2){
+    font-size: 35px;
 }
