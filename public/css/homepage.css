@@ -1,18 +1,30 @@
 #homePage{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 #homePage>*{
     width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* PREMIERE COLONNE */
+
+#divers_homepage{
+    margin-top: 15px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
 }
 
 #meteo_and_chiffre{
@@ -39,33 +51,13 @@
     height: 250px;
 }
 
-#search_home{
-    width: 300px;
-    height: 250px;
-    background: var(--color-seg);
-    display: flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items: center;
-}
-
 #chiffre_home_page * {
     font-size: 12px;
 }
 
-#information_homepage {
-    width: 250px;
-    height: 250px;
-    background: var(--color-seg);
-    display: flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items: center;
-}
-
 #carte_homepage{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background: var(--color-seg);
     display: flex;
     flex-direction:column;
@@ -75,6 +67,29 @@
 
 #histoire_homepage{
     width: 350px;
+    height: 300px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+/* DEUXIEME COLONNE */
+
+#information_homepage {
+    margin-top: 15px;
+    width: 300px;
+    height: 350px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#search_home{
+    width: 300px;
     height: 250px;
     background: var(--color-seg);
     display: flex;

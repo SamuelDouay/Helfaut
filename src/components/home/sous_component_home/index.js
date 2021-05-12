@@ -6,3 +6,4 @@ export * from './Chiffre';
 export * from './Information';
 export * from './Carte';
 export * from './HistoireHomePage';
+export * from './SearchHome';
