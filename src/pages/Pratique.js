@@ -1,4 +1,4 @@
-import { Component } from '../components/global';
+import { PratiqueComponent } from '../components/pratique/PratiqueComponent';
 import { Page } from './Page';
 
 export class Pratique extends Page {
@@ -8,11 +8,7 @@ export class Pratique extends Page {
 
 	mount(element) {
 		super.mount(element);
-		this.children = new Component(
-			'h1',
-			{ name: 'class', value: 'test' },
-			'Pratique'
-		);
+		this.children = new PratiqueComponent();
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}
