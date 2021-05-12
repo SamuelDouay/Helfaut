@@ -1,4 +1,4 @@
-import { Component } from '../components/global';
+import { HistoireComponent } from '../components/histoire/HistoireComponent';
 import { Page } from './Page';
 
 export class Histoire extends Page {
@@ -12,11 +12,7 @@ export class Histoire extends Page {
 
 	mount(element) {
 		super.mount(element);
-		this.children = new Component(
-			'h1',
-			{ name: 'class', value: 'test' },
-			'Histoire'
-		);
+		this.children = new HistoireComponent();
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}

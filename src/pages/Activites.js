@@ -1,4 +1,4 @@
-import { Component } from '../components/global';
+import { ActivitesComponent } from '../components/activites/ActivitesComponent';
 import { Page } from './Page';
 
 export class Activites extends Page {
@@ -8,11 +8,7 @@ export class Activites extends Page {
 
 	mount(element) {
 		super.mount(element);
-		this.children = new Component(
-			'h1',
-			{ name: 'class', value: 'test' },
-			'Activites'
-		);
+		this.children = new ActivitesComponent();
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}

@@ -1,4 +1,4 @@
-import { Component } from '../components/global';
+import { VieCommunaleComponent } from '../components/viecommunale/VieCommunaleComponent';
 import { Page } from './Page';
 
 export class VieCommunale extends Page {
@@ -8,11 +8,7 @@ export class VieCommunale extends Page {
 
 	mount(element) {
 		super.mount(element);
-		this.children = new Component(
-			'h1',
-			{ name: 'class', value: 'test' },
-			'Vie Communale'
-		);
+		this.children = new VieCommunaleComponent();
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}
