@@ -1,0 +1,84 @@
+#homePage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#homePage>*{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#meteo_and_chiffre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+}
+
+#meteo_and_chiffre>* {
+    width: 150px;
+    height: 150px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#new_homepage{
+    background: var(--color-seg);
+    width: 850px;
+    height: 250px;
+}
+
+#search_home{
+    width: 300px;
+    height: 250px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#chiffre_home_page * {
+    font-size: 12px;
+}
+
+#information_homepage {
+    width: 250px;
+    height: 250px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#carte_homepage{
+    width: 250px;
+    height: 250px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#histoire_homepage{
+    width: 350px;
+    height: 250px;
+    background: var(--color-seg);
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}

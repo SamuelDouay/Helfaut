@@ -1,4 +1,4 @@
-import { Component } from '../global';
+import { Component } from '../../global';
 //const APIKEY = d0f0478fb759f869cb291add389c4369;
 export class Meteo extends Component {
 	constructor() {

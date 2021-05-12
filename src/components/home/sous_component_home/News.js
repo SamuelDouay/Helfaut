@@ -1,4 +1,4 @@
-import { Component, Div } from '../global';
+import { Component, Div } from '../../global';
 
 export class News extends Component {
 	constructor() {
