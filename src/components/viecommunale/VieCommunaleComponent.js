@@ -1,4 +1,4 @@
-import { Component } from '../global';
+import { Component, Div } from '../global';
 
 export class VieCommunaleComponent extends Component {
 	constructor() {
@@ -41,8 +41,7 @@ export class VieCommunaleComponent extends Component {
 					)
 				),
 			]),
-			new Component(
-				'div',
+			new Div(
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_1' },
@@ -50,8 +49,7 @@ export class VieCommunaleComponent extends Component {
 				],
 				'Conseil Municipale'
 			),
-			new Component(
-				'div',
+			new Div(
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_2' },
@@ -59,8 +57,7 @@ export class VieCommunaleComponent extends Component {
 				],
 				'Mot du maire'
 			),
-			new Component(
-				'div',
+			new Div(
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_3' },
@@ -68,8 +65,7 @@ export class VieCommunaleComponent extends Component {
 				],
 				'Comptes rendus'
 			),
-			new Component(
-				'div',
+			new Div(
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_4' },
@@ -81,26 +77,14 @@ export class VieCommunaleComponent extends Component {
 	}
 
 	setOnglet(id) {
-		document
-			.querySelectorAll('.container_onglet_contenue')
-			.forEach(function (e) {
-				e.style.display = 'none';
-			});
+		document.querySelectorAll('.container_onglet_contenue').forEach(e => {
+			e.style.display = 'none';
+		});
 		document.querySelector(`#${id}`).style.display = 'block';
 	}
 
-	handleButton(event) {
-		event.preventDefault();
-		const current = event.href.split('#')[1];
-		this.setOnglet(current);
-	}
-
 	initEvent() {
-		let current = document.location.href.split('#')[1] || 'onglet_1';
+		const current = document.location.href.split('#')[1] || 'onglet_1';
 		this.setOnglet(current);
-
-		document.querySelectorAll('.onglets_button a').forEach(function (e) {
-			Event.observe(e, 'click', handleButton.bindAsEventListener(this));
-		});
 	}
 }
