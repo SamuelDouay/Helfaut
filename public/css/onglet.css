@@ -1,16 +1,7 @@
-#container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 /* CONTENU ONGLET */
 
 .container_onglet_contenue{
-    width: 100%;
+    /* width: 100%; */
     height: 500px;
     background: var(--color-seg);
 }
@@ -18,16 +9,19 @@
 /* BUTTON ONGLET */
 
 #onglets_buttons{
-    width: 100%;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
 }
 
 #onglets_buttons li{
     background: var(--color-seg);
     height: 35px;
+    /* width: 24%; */
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
 }
 
 #onglets_buttons a {
