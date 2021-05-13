@@ -3,10 +3,10 @@ import { Component, Div } from '../global';
 export class PratiqueComponent extends Component {
 	constructor() {
 		super('div', { name: 'id', value: 'container' }, [
-			new Component('ul', { name: 'id', value: 'onglets_buttons' }, [
+			new Div({ name: 'id', value: 'onglets_buttons' }, [
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 19%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_1' },
@@ -15,7 +15,7 @@ export class PratiqueComponent extends Component {
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 19%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_2' },
@@ -24,17 +24,17 @@ export class PratiqueComponent extends Component {
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 19%;' },
 					new Component('a', { name: 'href', value: '#onglet_3' }, 'Services')
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 19%;' },
 					new Component('a', { name: 'href', value: '#onglet_4' }, 'Ecoles')
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 19%;' },
 					new Component('a', { name: 'href', value: '#onglet_5' }, 'Economie')
 				),
 			]),
