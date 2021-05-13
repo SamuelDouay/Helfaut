@@ -1,19 +1,12 @@
 /* CONTENU ONGLET */
 
 .container_onglet_contenue{
-    /* width: 100%; */
+    margin-top: 10px;
     height: 500px;
     background: var(--color-seg);
 }
 
 /* BUTTON ONGLET */
-
-#onglets_buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
 #onglets_buttons li{
     background: var(--color-seg);
@@ -24,7 +17,29 @@
     padding-left: 15px;
 }
 
+#onglets_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #onglets_buttons a {
     text-decoration: none;
     color: var(--color-font);
+}
+
+.active{
+    height: 45px;
+}
+
+/* DEUXIEME SOLUTION */
+
+#onglets_buttons span{
+    background: var(--color-seg);
+    height: 35px;
+    width: 49.5%;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
 }

@@ -3,10 +3,10 @@ import { Component, Div } from '../global';
 export class VieCommunaleComponent extends Component {
 	constructor() {
 		super('div', { name: 'id', value: 'container' }, [
-			new Component('ul', { name: 'id', value: 'onglets_buttons' }, [
+			new Div({ name: 'id', value: 'onglets_buttons' }, [
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 24%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_1' },
@@ -15,7 +15,7 @@ export class VieCommunaleComponent extends Component {
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 24%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_2' },
@@ -24,7 +24,7 @@ export class VieCommunaleComponent extends Component {
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 24%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_3' },
@@ -33,7 +33,7 @@ export class VieCommunaleComponent extends Component {
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 24%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_4' },
@@ -85,6 +85,11 @@ export class VieCommunaleComponent extends Component {
 
 	initEvent() {
 		const current = document.location.href.split('#')[1] || 'onglet_1';
+		document.querySelectorAll('a').forEach(element => {
+			element;
+			// ? .classList.add('active')
+			// : .classList.remove('active');
+		});
 		this.setOnglet(current);
 	}
 }

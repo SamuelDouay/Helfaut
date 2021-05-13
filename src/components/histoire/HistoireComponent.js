@@ -3,15 +3,15 @@ import { Component, Div } from '../global';
 export class HistoireComponent extends Component {
 	constructor() {
 		super('div', { name: 'id', value: 'container' }, [
-			new Component('ul', { name: 'id', value: 'onglets_buttons' }, [
+			new Div({ name: 'id', value: 'onglets_buttons' }, [
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 49%;' },
 					new Component('a', { name: 'href', value: '#onglet_1' }, 'Histoire')
 				),
 				new Component(
 					'li',
-					null,
+					{ name: 'style', value: 'width : 49%;' },
 					new Component(
 						'a',
 						{ name: 'href', value: '#onglet_2' },
