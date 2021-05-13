@@ -14,11 +14,11 @@ Router.initRouter(
 
 function handleEventLog(e = null) {
 	const light_darck = document.querySelector('#theme_l_d');
-	let darck = false;
+	let dark = false;
 	light_darck.addEventListener('click', e => {
 		e.preventDefault();
-		if (!darck) {
-			darckMode();
+		if (!dark) {
+			darkMode();
 			darck = true;
 		} else {
 			lightMode();
@@ -30,7 +30,7 @@ function handleEventLog(e = null) {
 handleEventLog();
 window.addEventListener('log', handleEventLog);
 
-function darckMode() {
+function darkMode() {
 	const color_darck = ['#212121', '#181818', '#BABABA', '#fff'];
 	document
 		.querySelector('#theme_l_d')
