@@ -6,36 +6,44 @@ export class PratiqueComponent extends Component {
 			new Div({ name: 'id', value: 'onglets_buttons' }, [
 				new Component(
 					'li',
-					{ name: 'style', value: 'width : 19%;' },
-					new Component(
-						'a',
-						{ name: 'href', value: '#onglet_1' },
-						'Horraire de la mairie'
-					)
+					[
+						{ name: 'style', value: 'width : 19%;' },
+						{ name: 'class', value: 'onglet_active' },
+						{ name: 'id', value: '#onglet_1' },
+					],
+					'Horraire de la mairie'
 				),
 				new Component(
 					'li',
-					{ name: 'style', value: 'width : 19%;' },
-					new Component(
-						'a',
-						{ name: 'href', value: '#onglet_2' },
-						'Salle multifonction'
-					)
+					[
+						{ name: 'style', value: 'width : 19%;' },
+						{ name: 'id', value: '#onglet_2' },
+					],
+					'Salle multifonction'
 				),
 				new Component(
 					'li',
-					{ name: 'style', value: 'width : 19%;' },
-					new Component('a', { name: 'href', value: '#onglet_3' }, 'Services')
+					[
+						{ name: 'style', value: 'width : 19%;' },
+						{ name: 'id', value: '#onglet_3' },
+					],
+					'Services'
 				),
 				new Component(
 					'li',
-					{ name: 'style', value: 'width : 19%;' },
-					new Component('a', { name: 'href', value: '#onglet_4' }, 'Ecoles')
+					[
+						{ name: 'style', value: 'width : 19%;' },
+						{ name: 'id', value: '#onglet_4' },
+					],
+					'Ecoles'
 				),
 				new Component(
 					'li',
-					{ name: 'style', value: 'width : 19%;' },
-					new Component('a', { name: 'href', value: '#onglet_5' }, 'Economie')
+					[
+						{ name: 'style', value: 'width : 19%;' },
+						{ name: 'id', value: '#onglet_5' },
+					],
+					'Economie'
 				),
 			]),
 			new Div(
@@ -81,15 +89,32 @@ export class PratiqueComponent extends Component {
 		]);
 	}
 
-	setOnglet(id) {
+	setOnglet(value) {
+		document.querySelectorAll('li').forEach(li => {
+			if (li.getAttribute('id') == value) {
+				let atClass = document.createAttribute('class');
+				atClass.value = 'onglet_active';
+				li.setAttributeNode(atClass);
+			} else {
+				li.removeAttribute('class');
+			}
+		});
 		document.querySelectorAll('.container_onglet_contenue').forEach(e => {
 			e.style.display = 'none';
 		});
-		document.querySelector(`#${id}`).style.display = 'block';
+		document.querySelector(
+			`#onglet_${value.charAt(value.length - 1)}`
+		).style.display = 'block';
 	}
 
 	initEvent() {
-		const current = document.location.href.split('#')[1] || 'onglet_1';
-		this.setOnglet(current);
+		document.querySelectorAll('li').forEach(li => {
+			li.addEventListener('click', ev => {
+				ev.preventDefault();
+				if (li.getAttribute('class') == null) {
+					this.setOnglet(li.getAttribute('id'));
+				}
+			});
+		});
 	}
 }
