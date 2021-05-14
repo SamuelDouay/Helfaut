@@ -75,7 +75,7 @@
     object-fit: cover;
     display: flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
 }
 
@@ -100,4 +100,22 @@
     flex-direction:column;
     justify-content:space-around;
     align-items: center;
+}
+
+/* HISTOIRE */
+
+#histoire_homepage_text{
+    font-weight: bold;
+    color: #fff;
+}
+
+#histoire_homepage_lien{
+    margin-top: 18px;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    width: 40%;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
 }
