@@ -3,13 +3,13 @@ import { Component } from '../../global';
 export class Meteo extends Component {
 	constructor() {
 		super('div', { name: 'id', value: 'meteo' }, [
-			new Component('h1', { name: 'id', value: 'meteo_temperature' }, '10° C'),
+			new Component('div', { name: 'id', value: 'meteo_temperature' }, '10° C'),
 			new Component('img', [
-				{ name: 'src', value: '' },
+				{ name: 'src', value: '/images/sun.svg' },
 				{ name: 'alt', value: 'temps' },
 				{ name: 'id', value: 'meteo_image' },
 			]),
-			new Component('h3', { name: 'id', value: 'date_meteo' }, '05/05'),
+			new Component('div', { name: 'id', value: 'date_meteo' }, '05/05'),
 		]);
 	}
 }
