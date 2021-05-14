@@ -50,7 +50,7 @@ export class VieCommunaleComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_2' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Mot du maire'
 			),
@@ -58,7 +58,7 @@ export class VieCommunaleComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_3' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Comptes rendus'
 			),
@@ -66,7 +66,7 @@ export class VieCommunaleComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_4' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Bulletins municipaux'
 			),

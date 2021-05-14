@@ -58,7 +58,7 @@ export class PratiqueComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_2' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Salle multifonction'
 			),
@@ -66,7 +66,7 @@ export class PratiqueComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_3' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Services'
 			),
@@ -74,7 +74,7 @@ export class PratiqueComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_4' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Ecole'
 			),
@@ -82,7 +82,7 @@ export class PratiqueComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_5' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Economie'
 			),
