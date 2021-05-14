@@ -44,7 +44,7 @@
     background: var(--color-seg);
     display: flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
 }
 
@@ -52,10 +52,6 @@
     background: var(--color-seg);
     width: 850px;
     height: 280px;
-}
-
-#chiffre_home_page * {
-    font-size: 12px;
 }
 
 #carte_homepage{
@@ -124,4 +120,24 @@
 
 #carte_homepage img{
     width: 75%;
+}
+
+/* CHIFFRE */
+
+#chiffre_home_page > * {
+    width: 100%;
+    text-align: center;
+    font-weight: 0;
+}
+
+.nom_value{
+    margin:0;
+    color: var(--color-ter);
+    font-size: 10px;
+}
+
+.chiffre_value{
+    margin:0;
+    color: var(--color-font);
+    font-size: 15px;
 }
