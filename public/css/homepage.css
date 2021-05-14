@@ -94,7 +94,7 @@
     background: var(--color-seg);
     display: flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .chiffre_value{
-    margin:0;
+    /* margin:0; */
     color: var(--color-font);
     font-size: 15px;
 }
@@ -156,4 +156,50 @@
 
 #date_meteo{
     font-size: 12px;
+}
+
+/* RECHERCHE */
+
+#search_home > * {
+    width: 90%;
+}
+
+#search_home input {
+    border-radius: 0;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#information_search{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.info_value{
+    color: var(--color-font);
+    font-size: 15px;    
+}
+
+#recherche_pratique{
+    border-top: 1px solid gray;
+}
+
+#pratique_search{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    color:var(--color-font);
+}
+
+#pratique_search > * {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
