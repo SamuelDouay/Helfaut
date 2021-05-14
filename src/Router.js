@@ -14,24 +14,6 @@ export default class Router {
 				this.navigate(e.currentTarget.getAttribute('href'));
 			});
 		});
-
-		this.#menuNavigation.querySelectorAll('li').forEach(link => {
-			link.addEventListener('mouseover', e => {
-				e.preventDefault();
-				document.querySelectorAll('.menu_nav_page ul').forEach(ul => {
-					ul.style.display = 'none';
-				});
-			});
-		});
-
-		this.#menuNavigation.querySelectorAll('li').forEach(link => {
-			link.addEventListener('mouseenter', e => {
-				e.preventDefault();
-				document.querySelectorAll('.menu_nav_page ul').forEach(ul => {
-					ul.style.display = 'block';
-				});
-			});
-		});
 	}
 
 	/**

@@ -92,6 +92,10 @@ header {
     margin-left: 25px;
 }
 
+#menu_navigation li:hover ul {
+    display: block;
+}
+
 /* DEUXIEME PARTIE */
 
 #header_title {
