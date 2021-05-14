@@ -34,7 +34,7 @@ export class ActivitesComponent extends Component {
 				[
 					{ name: 'class', value: 'container_onglet_contenue' },
 					{ name: 'id', value: 'onglet_2' },
-					{ name: 'style', value: 'display:block;' },
+					{ name: 'style', value: 'display:none;' },
 				],
 				'Informations'
 			),
