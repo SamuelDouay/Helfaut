@@ -7,3 +7,4 @@ export * from './Information';
 export * from './Carte';
 export * from './HistoireHomePage';
 export * from './SearchHome';
+export * from './SearchInfo';
