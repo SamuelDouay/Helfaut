@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-/* PREMIERE COLONNE */
+/* PREMIERE COLONNE - AGENCEMENT */
 
 #divers_homepage{
     margin-top: 20px;
@@ -79,7 +79,7 @@
     align-items: center;
 }
 
-/* DEUXIEME COLONNE */
+/* DEUXIEME COLONNE- AGENCEMENT */
 
 #information_homepage {
     margin-top: 20px;
@@ -118,4 +118,10 @@
     height: 25px;
     border-radius: 15px;
     text-align: center;
+}
+
+/* CARTE */
+
+#carte_homepage img{
+    width: 75%;
 }
