@@ -1,4 +1,4 @@
-import { Component } from '../../global';
+import { Component, Div } from '../../global';
 
 export class Carte extends Component {
 	constructor() {
@@ -7,6 +7,7 @@ export class Carte extends Component {
 				{ name: 'src', value: '/images/maphelfaut.png' },
 				{ name: 'alt', value: 'Carte' },
 			]),
+			new Div({ name: 'id', value: 'maps' }, ''),
 		]);
 	}
 }
