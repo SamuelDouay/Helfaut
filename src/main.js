@@ -19,10 +19,10 @@ function handleEventLog(e = null) {
 		e.preventDefault();
 		if (!dark) {
 			darkMode();
-			darck = true;
+			dark = true;
 		} else {
 			lightMode();
-			darck = false;
+			dark = false;
 		}
 	});
 }
