@@ -19,5 +19,11 @@
 ## Build depôt
 
 ```bash
-    npm watch
+    npm run build
+```
+
+## Build depôt direct
+
+```bash
+    npm run watch
 ```
