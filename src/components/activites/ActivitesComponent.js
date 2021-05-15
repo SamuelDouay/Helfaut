@@ -8,3 +8,4 @@ export class ActivitesComponent extends Component {
 			new OngletContentList(['Clendrier 2021', 'Informations']),
 		]);
 	}
+}
