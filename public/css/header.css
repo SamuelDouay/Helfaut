@@ -24,13 +24,14 @@ header {
     flex-direction: column;
 }
 
+/* AGENCEMENT */
+
 #menu_header {
     background-color: var(--color-seg);
     width: 100%;
     height: 35px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #menu_header> * {
@@ -40,18 +41,18 @@ header {
 #menu_navigation{
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:auto;
+    /* flex-direction: row; */
+    /* justify-content: space-around;
+    margin:auto; */
 }
+
+/* HOME & THEME */
 
 .header_image{
     width: 15px;
     height: 15px;
     text-indent: -9999px;
 }
-
-/* HOME & THEME */
 
 #home_header{
     margin-left: 10px;
@@ -65,11 +66,12 @@ header {
 
 .menu_nav_page {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
+    position: relative;
 }
 
 .menu_nav_page a{
+    display: block;
     text-align: center;
     text-decoration: none;
     color: var(--color-font);
@@ -82,7 +84,8 @@ header {
     background: var(--color-seg);
     width: 100%;
     height: 100px;
-    margin-top: 5px;
+    margin-top: 3px;
+    position: absolute;
 }
 
 .menu_nav_page li {
@@ -92,7 +95,7 @@ header {
     margin-left: 25px;
 }
 
-#menu_navigation li:hover ul {
+#menu_navigation >li:hover ul {
     display: block;
 }
 
@@ -100,7 +103,7 @@ header {
 
 #header_title {
     width: 100%;
-    height: 100%;
+    height: 115px;
     background-color: transparent;
     display: flex;
     flex-direction: row;
