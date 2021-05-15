@@ -23,7 +23,7 @@ export class OngletContentList extends Component {
 				let atClass = document.createAttribute('class');
 				atClass.value = 'onglet_active';
 				li.setAttributeNode(atClass);
-			} else {
+			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
 			}
 		});
