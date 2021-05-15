@@ -18,6 +18,6 @@ export class PratiqueComponent extends Component {
 				'Ecoles',
 				'Economie',
 			]),
-		]);
-	}
+    ]);
+  }
 }

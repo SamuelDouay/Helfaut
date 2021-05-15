@@ -4,7 +4,6 @@ export default class Router {
 	static routes = routes;
 	static sectionHTMLContent;
 	static #menuNavigation;
-	static #footerNavigation;
 	static currentPage;
 
 	static set menuNavigation(element) {
@@ -17,16 +16,6 @@ export default class Router {
 		});
 	}
 
-	static set footerNavigation(element) {
-		this.#footerNavigation = element;
-		this.#footerNavigation.querySelectorAll('a').forEach(link => {
-			if (link.classList.contains('notIndex')) return;
-			link.addEventListener('click', e => {
-				e.preventDefault();
-				this.navigate(e.currentTarget.getAttribute('href'));
-			});
-		});
-	}
 	/**
 	 * Realise la navigation au sein de notre application en montant les pages dans le contenant Router.sectionHTMLContent
 	 * Realise aussi le changement du nom de l'onglet et effectue l'ajout d'une entre dans l'historique de navigation.
