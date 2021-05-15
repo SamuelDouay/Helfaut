@@ -23,5 +23,5 @@ module.exports = {
 			},
 		],
 	},
-	devtool: 'source-map',
+	devtool: 'hidden-cheap-source-map',
 };
