@@ -91,6 +91,7 @@ header {
     width: 100%;
     margin-left: 25px;
     text-align: justify;
+    position: relative;
 }
 
 #menu_navigation >li:hover ul {
