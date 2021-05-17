@@ -4,6 +4,7 @@
     margin-top: -10px;
     height: 500px;
     background: var(--color-seg);
+    overflow: auto;
 }
 
 /* BUTTON ONGLET */
