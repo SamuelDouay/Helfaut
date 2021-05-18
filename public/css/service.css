@@ -1,0 +1,16 @@
+#service_contener{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#service_contener  ul{
+    padding: 0;
+    margin-top: 0;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#service_contener  ul li{
+    margin-top: 5px;
+}

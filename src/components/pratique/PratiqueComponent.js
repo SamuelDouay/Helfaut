@@ -1,5 +1,6 @@
 import { Component } from '../global';
 import { OngletContentList, OngletList } from '../transversal';
+import { Service } from './Service';
 
 export class PratiqueComponent extends Component {
 	constructor() {
@@ -14,10 +15,10 @@ export class PratiqueComponent extends Component {
 			new OngletContentList([
 				'Horraire de la mairie',
 				'Salle multifonction',
-				'Services',
+				new Service(),
 				'Ecoles',
 				'Economie',
 			]),
-    ]);
-  }
+		]);
+	}
 }
