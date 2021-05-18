@@ -47,3 +47,33 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* ECOLE */
+
+#ecole_container{
+    margin:auto;
+    margin-top: 35px;
+    width: 80%;
+}
+
+.etablissement {
+    margin-bottom: 15px;
+}
+
+.ecole_name {
+    font-size: 18px;
+}
+
+.prestations_container {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.prestation{
+    margin-bottom: 12px;
+}
+
+.eta_lycee {
+    font-size: 12px;
+    margin-left: 15px;
+}
