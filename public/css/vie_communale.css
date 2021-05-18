@@ -1,20 +1,26 @@
 /* BULLETINS */
 
 #bulletin_municipaux{
-
+    width: 80%;
+    margin:auto;
+    margin-top: 25px;
 }
 
 #title_bulletin{
-
+    font-size: medium;
+    font-weight:bold;
 }
 
 #bulletin_container{
-
+    width: 100%;
+    margin-top: 35px;
 }
 
 .bulletin_card {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .bulletin_card > div {
@@ -22,6 +28,8 @@
 }
 
 .bulletin_card img {
+    margin-left: 25px;
+    margin-top: 5px;
     width: 15px;
 }
 
@@ -30,5 +38,6 @@
 }
 
 .date_bulletin{
-
+    color: var(--color-ter);
+    font-size: 10px;
 }
