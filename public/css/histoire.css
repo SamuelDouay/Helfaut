@@ -4,3 +4,26 @@
     margin-top: 80px;
     text-align: justify;
 }
+
+#album_photo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#album_photo > * {
+    height: 400px;
+}
+
+.fleche{
+    width: 50px;
+}
+
+#photos{
+    background:var(--color-main);
+    width: 800px;
+    border-radius: 25px;
+    
+}
