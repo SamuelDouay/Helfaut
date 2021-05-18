@@ -16,6 +16,11 @@ export class Bulletins extends Component {
 				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
 				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
 				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
 			]),
 		]);
 	}
