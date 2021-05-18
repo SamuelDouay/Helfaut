@@ -1,5 +1,6 @@
 import { Component } from '../global';
 import { OngletContentList, OngletList } from '../transversal';
+import { Bulletins } from './Bulletins';
 
 export class VieCommunaleComponent extends Component {
 	constructor() {
@@ -14,7 +15,7 @@ export class VieCommunaleComponent extends Component {
 				'Conseil municipal',
 				'Mot du maire',
 				'Comptes rendus',
-				'Bulletins municipaux',
+				new Bulletins(),
 			]),
 		]);
 	}
