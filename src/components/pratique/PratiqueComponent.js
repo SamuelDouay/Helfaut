@@ -1,5 +1,6 @@
 import { Component } from '../global';
 import { OngletContentList, OngletList } from '../transversal';
+import { SalleMultifonction } from './SalleMultifonction';
 import { Service } from './Service';
 
 export class PratiqueComponent extends Component {
@@ -14,7 +15,7 @@ export class PratiqueComponent extends Component {
 			]),
 			new OngletContentList([
 				'Horraire de la mairie',
-				'Salle multifonction',
+				new SalleMultifonction(),
 				new Service(),
 				'Ecoles',
 				'Economie',
