@@ -1,0 +1,14 @@
+#information_container{
+    width: 80%;
+    margin:auto;
+    margin-top: 25px;
+}
+
+.information_card{
+    margin-bottom: 15px;
+}
+
+.info_date{
+    color: var(--color-ter);
+    font-size: 12px;
+}
