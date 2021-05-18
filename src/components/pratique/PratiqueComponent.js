@@ -1,6 +1,7 @@
 import { Component } from '../global';
 import { OngletContentList, OngletList } from '../transversal';
 import { Ecoles } from './Ecole';
+import { Economie } from './Economie';
 import { SalleMultifonction } from './SalleMultifonction';
 import { Service } from './Service';
 
@@ -19,7 +20,7 @@ export class PratiqueComponent extends Component {
 				new SalleMultifonction(),
 				new Service(),
 				new Ecoles(),
-				'Economie',
+				new Economie(),
 			]),
 		]);
 	}

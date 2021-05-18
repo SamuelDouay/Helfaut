@@ -77,3 +77,25 @@
     font-size: 12px;
     margin-left: 15px;
 }
+
+/* ECONOMIE */
+
+#eco_container {
+    margin:auto;
+    margin-top: 40px;
+    width: 80%; 
+}
+
+.commercant_container{
+    margin-top: 25px;
+}
+
+.commercant_title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.commercant_card{
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
