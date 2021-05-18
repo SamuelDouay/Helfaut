@@ -1,6 +1,6 @@
 /* BULLETINS */
 
-#bulletin_municipaux{
+#bulletin_municipaux, #compte_rendu_container{
     width: 80%;
     margin:auto;
     margin-top: 25px;
@@ -16,28 +16,32 @@
     margin-top: 35px;
 }
 
-.bulletin_card {
+.bulletin_card, .compte_rendu_card {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.bulletin_card > div {
-
-}
-
-.bulletin_card img {
+.bulletin_card img{
     margin-left: 25px;
     margin-top: 5px;
     width: 15px;
 }
 
-.numero_bulletin{
-
-}
-
 .date_bulletin{
     color: var(--color-ter);
     font-size: 10px;
+}
+
+/* COMPTE RENDU  */
+
+.compte_rendu_card {
+    margin: 0;
+    align-items: center;
+}
+
+.compte_rendu_card img {
+    margin-left: 25px;
+    width: 15px;
 }

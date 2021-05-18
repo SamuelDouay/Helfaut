@@ -10,17 +10,17 @@ export class Bulletins extends Component {
 				'Découvrez les bulletins municipaux de la commune'
 			),
 			new BulletinAffichageList([
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
-				{ numero: 'XXX', jour: 'JJ', mois: 'MMM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
+				{ numero: 'XXX', jour: 'JJ', mois: 'MM', annee: 'AAAA' },
 			]),
 		]);
 	}
