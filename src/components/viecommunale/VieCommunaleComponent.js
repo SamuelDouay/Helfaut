@@ -2,6 +2,7 @@ import { Component } from '../global';
 import { OngletContentList, OngletList } from '../transversal';
 import { Bulletins } from './Bulletins';
 import { MotDuMaire } from './MotDuMaire';
+import { CompteRendu } from './CompteRendu';
 
 export class VieCommunaleComponent extends Component {
 	constructor() {
@@ -15,7 +16,7 @@ export class VieCommunaleComponent extends Component {
 			new OngletContentList([
 				'Conseil municipal',
 				new MotDuMaire(),
-				'Comptes rendus',
+				new CompteRendu(),
 				new Bulletins(),
 			]),
 		]);
