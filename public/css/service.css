@@ -1,3 +1,5 @@
+/* SERVICE */
+
 #service_contener{
     width: 80%;
     margin: auto;
@@ -13,4 +15,35 @@
 
 #service_contener  ul li{
     margin-top: 5px;
+}
+
+/* SALLE MULTIFONCTION */
+
+#salle_multifonction_container{
+    width: 80%;
+    margin : auto;
+    margin-top: 50px;
+}
+
+.reglement_tarif img{
+    width: 15px;
+}
+
+.salle {
+    margin-bottom: 15px;
+}
+
+#salle_multifonction_container p{
+    font-size: 20px;
+}
+
+.reglement_tarif{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.reglement, .tarif{
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
 }
