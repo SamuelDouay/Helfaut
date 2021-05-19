@@ -45,3 +45,91 @@
     margin-left: 25px;
     width: 15px;
 }
+
+/* CONSEIL MUNICIPAL */
+
+#conseil_container {
+    margin : auto;
+    margin-top: 50px;
+    width: 80%;
+}
+
+#container_arbre{
+    width: 100%;
+}
+
+#personne_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+#autre_personne {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#maire {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#maire > * {
+    margin: auto;
+}
+
+.personne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 33%;
+    margin-bottom: 25px;
+}
+
+
+.photo_personne{
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-main);
+    border-radius: 30px;
+}
+
+.info_personne{
+    padding-left: 15px;
+}
+
+.info_personne > *:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.info_personne > *:nth-child(2){
+    font-size: 12px;
+}
+
+.conseilles_municipaux{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.conseilles_municipaux > * {
+    font-size: 12px;
+}
+
+.title_conseil{
+    font-size: 15px;
+}
+
+.conseilles_municipaux > *:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.conseilles_municipaux > *:nth-child(2){
+    margin-left: 10px;
+}
