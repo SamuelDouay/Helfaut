@@ -12,3 +12,22 @@
     color: var(--color-ter);
     font-size: 12px;
 }
+
+#calendrier_container{
+    width: 80%;
+    margin:auto;
+    margin-top: 25px;
+}
+
+.mois_container{
+    margin-top: 20px;
+}
+
+.mois {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.event{
+    margin-left: 25px;
+}
