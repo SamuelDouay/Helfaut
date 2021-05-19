@@ -7,6 +7,19 @@
     overflow: auto;
 }
 
+
+.container_onglet_contenue::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.container_onglet_contenue::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.container_onglet_contenue::-webkit-scrollbar-thumb {
+    background: #666666;
+}
+
 /* BUTTON ONGLET */
 
 #onglets_buttons li{
