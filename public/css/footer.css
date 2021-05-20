@@ -30,6 +30,7 @@ footer {
 
 #contact_footer {
     height: 100px;
+    margin-left: 15px;
 }
 
 #contact_footer > *{
