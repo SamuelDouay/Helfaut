@@ -1,5 +1,5 @@
 footer {
-    height: 100px;
+    height: 200px;
     width: 100%;
     bottom:0;
     background-color: var(--color-ter);
@@ -17,7 +17,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content:left;
-    color: var(--color-font);
+    color: var(--color-seg);
 }
 
 #image_footer {
@@ -25,11 +25,15 @@ footer {
 }
 
 #image_footer img{
-    height: 70px;
+    height: 100px;
+}
+
+#contact_footer {
+    height: 100px;
 }
 
 #contact_footer > *{
     margin : 0;
-    font-size: 15px;
-    margin-top: 5px;
+    font-size: 12px;
+    margin-bottom: 15px;
 }
