@@ -44,7 +44,7 @@
     background: var(--color-seg);
     display: flex;
     flex-direction:column;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
 }
 
@@ -81,8 +81,6 @@
     background: var(--color-seg);
     display: flex;
     flex-direction:column;
-    justify-content:space-around;
-    align-items: center;
 }
 
 #search_home{
@@ -211,4 +209,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* INFO - MARIE */
+
+#information_homepage > * {
+    width: 80%;
+    margin: 12px auto;
+    font-size: 14px;
+}
+
+#info_title {
+    text-align: center;
+    margin: 15px auto;
+    font-size: 15px;
+}
+
+#info_num_tel {
+    margin-top: 35px;
+}
+
+#info_mail{
+    margin:0 auto;
 }
