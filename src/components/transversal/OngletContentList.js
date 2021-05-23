@@ -18,7 +18,7 @@ export class OngletContentList extends Component {
 	}
 
 	setOnglet(value) {
-		document.querySelectorAll('li').forEach(li => {
+		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			if (li.getAttribute('id') == value) {
 				let atClass = document.createAttribute('class');
 				atClass.value = 'onglet_active';
@@ -36,7 +36,7 @@ export class OngletContentList extends Component {
 	}
 
 	initEvent() {
-		document.querySelectorAll('li').forEach(li => {
+		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			li.addEventListener('click', ev => {
 				ev.preventDefault();
 				if (li.getAttribute('class') == null) {
