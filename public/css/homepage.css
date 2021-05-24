@@ -120,14 +120,18 @@
 }
 
 #maps{
-    width: 65px;
-    height: 65px;
-    background-color: var(--color-main);
+    width: 85px;
+    height: 85px;
+    background: url('/images/helfaut_maps.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 40% 0%;
     border-radius: 10px;
     position: absolute;
     z-index: 1;
     margin-top: 10px;  
-    margin-left: 175px;
+    margin-left: 155px;
 }
 
 /* CHIFFRE */
