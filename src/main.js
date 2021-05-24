@@ -1,6 +1,3 @@
-//import { ConnexionButton } from './components/sign';
-//import { UserButton } from './components/sign/UserButton';
-//import { Connnexion } from './connexion/Connexion';
 import Router from './Router';
 
 window.onload = () => window.scrollTo(0, 0);
@@ -41,10 +38,11 @@ function darkMode() {
 	document.querySelectorAll('nav img').forEach(e => {
 		e.setAttribute('background', '#fff');
 	});
-	document.documentElement.style.setProperty('--color-main', color_darck[0]);
-	document.documentElement.style.setProperty('--color-seg', color_darck[1]);
+	document.documentElement.style.setProperty('--color-main', color_darck[1]);
+	document.documentElement.style.setProperty('--color-seg', color_darck[0]);
 	document.documentElement.style.setProperty('--color-ter', color_darck[2]);
 	document.documentElement.style.setProperty('--color-font', color_darck[3]);
+	document.documentElement.style.setProperty('--color-footer', color_darck[0]);
 }
 
 function lightMode() {
@@ -59,4 +57,5 @@ function lightMode() {
 	document.documentElement.style.setProperty('--color-seg', color_light[1]);
 	document.documentElement.style.setProperty('--color-ter', color_light[2]);
 	document.documentElement.style.setProperty('--color-font', color_light[3]);
+	document.documentElement.style.setProperty('--color-footer', color_light[2]);
 }

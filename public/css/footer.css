@@ -2,7 +2,7 @@ footer {
     height: 200px;
     width: 100%;
     bottom:0;
-    background-color: var(--color-ter);
+    background-color: var(--color-footer);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,7 +17,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content:left;
-    color: var(--color-seg);
+    color: var(--color-font);
 }
 
 #image_footer {

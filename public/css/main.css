@@ -3,6 +3,7 @@
     --color-seg : #ffffff; /*segondaire*/
     --color-ter : #bababa; /*troisième*/
 	--color-font : #000;
+	--color-footer : #bababa;
 }
 
 * {
