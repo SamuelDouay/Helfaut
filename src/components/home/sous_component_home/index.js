@@ -1,5 +1,4 @@
 export * from './News';
-export * from './Pratique';
 export * from './Meteo';
 export * from '../HeaderComponant';
 export * from './Chiffre';

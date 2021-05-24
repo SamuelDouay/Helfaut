@@ -4,7 +4,7 @@ export class Horaire extends Component {
 	constructor() {
 		super('div', { name: 'id', value: 'horaire_container' }, [
 			new Div(null, [
-				new Div(null, "Heure d'ouverture :"),
+				new Div(null, "Heures d'ouverture :"),
 				new Div({ name: 'class', value: 'heures' }, [
 					new Div(
 						null,
@@ -22,7 +22,7 @@ export class Horaire extends Component {
 					),
 					new Div(
 						null,
-						'Adjoints | Tous les premiers Lundi du mois & Samedi : 9h - 10h0'
+						'Adjoints | Tous les premiers Lundi du mois & Samedi : 9h - 10h'
 					),
 				]),
 			]),

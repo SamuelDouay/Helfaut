@@ -21,7 +21,7 @@ export class ConseilMunicipal extends Component {
 				new Div({ name: 'class', value: 'conseilles_municipaux' }, [
 					new Div(
 						{ name: 'class', value: 'title_conseil' },
-						'Conseillé municipaux :'
+						'Conseillés municipaux :'
 					),
 					new Div(null, [
 						'Lorem IPSUM,',

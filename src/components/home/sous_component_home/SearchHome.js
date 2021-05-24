@@ -18,11 +18,11 @@ export class SearchHome extends Component {
 				'Pratique',
 				new Div({ name: 'id', value: 'pratique_search' }, [
 					new Div({ name: 'id', value: 'col_1' }, [
-						new Div(null, 'Horaires miaire'),
+						new Div(null, 'Horaires mairie'),
 						new Div(null, 'Salle multifonction'),
 					]),
 					new Div({ name: 'id', value: 'col_2' }, [
-						new Div(null, 'Service'),
+						new Div(null, 'Services'),
 						new Div(null, 'Ecoles'),
 					]),
 					new Div({ name: 'id', value: 'col_3' }, [

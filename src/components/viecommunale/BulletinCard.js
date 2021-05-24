@@ -6,7 +6,7 @@ export class BulletinCard extends Component {
 			new Div(null, [
 				new Div(
 					{ name: 'class', value: 'numero_bulletin' },
-					`Bulletin numero ${numero}`
+					`Bulletin numéro ${numero}`
 				),
 				new Div(
 					{ name: 'class', value: 'date_bulletin' },

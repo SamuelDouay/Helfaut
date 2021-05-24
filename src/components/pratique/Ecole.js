@@ -27,10 +27,7 @@ export class Ecoles extends Component {
 				]),
 			]),
 			new Div({ name: 'class', value: 'etablissement' }, [
-				new Div(
-					{ name: 'class', value: 'ecole_name' },
-					'École primaire Françoise Dolto Kelgommard'
-				),
+				new Div({ name: 'class', value: 'ecole_name' }, 'Lycées'),
 				new Div({ name: 'class', value: 'prestations_container' }, [
 					new Div({ name: 'class', value: 'prestation' }, [
 						new Div(null, "Lycées d'enseignement général :"),
@@ -66,10 +63,7 @@ export class Ecoles extends Component {
 							"Lycée professionnel d'Aire sur la Lys"
 						),
 					]),
-					new Div(
-						{ name: 'class', value: 'prestation' },
-						'Rammassage scolaire'
-					),
+					new Div({ name: 'class', value: 'prestation' }, 'Ramassage scolaire'),
 				]),
 			]),
 		]);
