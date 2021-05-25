@@ -1,5 +1,6 @@
 import { Component, Div } from '../../global';
 import { SearchInfo } from './SearchInfo';
+import { SearchInfoList } from './SearchInfoList';
 
 export class SearchHome extends Component {
 	constructor() {
@@ -9,10 +10,11 @@ export class SearchHome extends Component {
 				{ name: 'name', value: 'recherche' },
 				{ name: 'placeholder', value: 'Rechercher' },
 			]),
-			new Div({ name: 'id', value: 'information_search' }, [
-				new SearchInfo('30 avril 2021', 'Information 1'),
-				new SearchInfo('25 avril 2021', 'Information 2'),
-				new SearchInfo('23 avril 2021', 'Information 3'),
+
+			new SearchInfoList([
+				{ date: '30 avril 2021', information: 'Information 1' },
+				{ date: '25 avril 2021', information: 'Information 2' },
+				{ date: '23 avril 2021', information: 'Information 3' },
 			]),
 			new Div({ name: 'id', value: 'recherche_pratique' }, [
 				'Pratique',
