@@ -1,4 +1,5 @@
 import { Component, Div } from '../../global';
+import Router from '../../../Router';
 
 export class NewsCard extends Component {
 	constructor({ date, info }, index) {
@@ -32,7 +33,6 @@ export class NewsCard extends Component {
 		);
 	}
 
-	
 	initEvent() {
 		const lien = document.querySelector('#homepage_lien');
 		lien.addEventListener('click', e => {
