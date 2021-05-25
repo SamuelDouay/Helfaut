@@ -3,6 +3,7 @@ import { OngletContentCard } from './OngletContentCard';
 
 export class OngletContentList extends Component {
 	ongletList;
+	slideIndex = 1;
 
 	constructor(ongletList) {
 		super('div', null, [
@@ -44,5 +45,33 @@ export class OngletContentList extends Component {
 				}
 			});
 		});
+
+		document.querySelectorAll('.fleche').forEach((e, index) => {
+			e.addEventListener('click', event => {
+				event.preventDefault();
+				if (index === 0) this.plusSlides(-1);
+				else this.plusSlides(1);
+			});
+		});
+	}
+
+	plusSlides(n) {
+		this.showSlides((this.slideIndex += n));
+	}
+
+	showSlides(n) {
+		const slides = document.querySelectorAll('.slides');
+
+		if (n > slides.length) {
+			this.slideIndex = 1;
+		}
+		if (n < 1) {
+			this.slideIndex = slides.length;
+		}
+		slides.forEach(slide => {
+			slide.style.display = 'none';
+		});
+		console.log(this.slideIndex - 1);
+		slides[this.slideIndex - 1].style.display = 'block';
 	}
 }
