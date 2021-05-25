@@ -1,3 +1,4 @@
+import Router from '../../../Router';
 import { Component, Div } from '../../global';
 
 export class HistoireHomePage extends Component {
@@ -16,5 +17,13 @@ export class HistoireHomePage extends Component {
 				"Histoire d'Helfaut"
 			),
 		]);
+	}
+
+	initEvent() {
+		const lien = document.querySelector('#histoire_homepage_lien');
+		lien.addEventListener('click', e => {
+			e.preventDefault();
+			Router.navigate(e.currentTarget.getAttribute('href'));
+		});
 	}
 }
