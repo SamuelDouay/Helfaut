@@ -1,7 +1,6 @@
 import Router from './Router';
 
 window.onload = () => window.scrollTo(0, 0);
-let slideIndex = 1;
 
 // On initialise le Router en lui passant la ou le contenu des pages doit etre rendu et le menu de notre SPA.
 Router.initRouter(
@@ -22,14 +21,6 @@ function handleEventLog(e = null) {
 			lightMode();
 			dark = false;
 		}
-	});
-
-	document.querySelectorAll('.fleches_news').forEach((e, index) => {
-		e.addEventListener('click', event => {
-			event.preventDefault();
-			if (index === 0) plusSlides(-1);
-			else plusSlides(1);
-		});
 	});
 }
 
@@ -67,24 +58,4 @@ function lightMode() {
 	document.documentElement.style.setProperty('--color-ter', color_light[2]);
 	document.documentElement.style.setProperty('--color-font', color_light[3]);
 	document.documentElement.style.setProperty('--color-footer', color_light[2]);
-}
-
-function plusSlides(n) {
-	showSlides((slideIndex += n));
-}
-
-function showSlides(n) {
-	const slides = document.querySelectorAll('.mySlides');
-
-	if (n > slides.length) {
-		slideIndex = 1;
-	}
-	if (n < 1) {
-		slideIndex = slides.length;
-	}
-	slides.forEach(slide => {
-		slide.style.display = 'none';
-	});
-
-	slides[slideIndex - 1].style.display = 'block';
 }
