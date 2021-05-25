@@ -31,4 +31,13 @@ export class NewsCard extends Component {
 			]
 		);
 	}
+
+	
+	initEvent() {
+		const lien = document.querySelector('#homepage_lien');
+		lien.addEventListener('click', e => {
+			e.preventDefault();
+			Router.navigate(e.currentTarget.getAttribute('href'));
+		});
+	}
 }
