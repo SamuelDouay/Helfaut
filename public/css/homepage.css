@@ -142,6 +142,10 @@
     font-weight: 0;
 }
 
+#chiffre_home_page > *:nth-child(1){
+    margin-bottom: 18px;
+}
+
 .nom_value{
     margin:0;
     color: var(--color-ter);
