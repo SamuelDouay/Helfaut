@@ -10,9 +10,9 @@ export class Histoire extends Page {
 		return 'Histoire de la commune';
 	}
 
-	mount(element) {
-		super.mount(element);
-		this.children = new HistoireComponent();
+	mount(element, index) {
+		super.mount(element, index);
+		this.children = new HistoireComponent(index);
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}

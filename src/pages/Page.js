@@ -3,10 +3,12 @@ import { Component } from '../components/global';
 export class Page extends Component {
 	element;
 	#pageTitle;
+	onglet;
 
 	constructor(pageTitle, className, children) {
 		super('section', { name: 'class', value: className }, children);
 		this.#pageTitle = pageTitle;
+		this.onglet = 1;
 	}
 
 	set pageTitle(pageT) {
@@ -21,7 +23,8 @@ export class Page extends Component {
 		return this.#pageTitle;
 	}
 
-	mount(element) {
+	mount(element, onglet) {
+		this.onglet = onglet;
 		this.element = element;
 	}
 

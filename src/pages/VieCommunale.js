@@ -6,9 +6,9 @@ export class VieCommunale extends Page {
 		super('Vie communale', 'home');
 	}
 
-	mount(element) {
-		super.mount(element);
-		this.children = new VieCommunaleComponent();
+	mount(element, index) {
+		super.mount(element, index);
+		this.children = new VieCommunaleComponent(this.onglet);
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}

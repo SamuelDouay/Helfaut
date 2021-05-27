@@ -6,9 +6,9 @@ export class Activites extends Page {
 		super('Activités', 'home');
 	}
 
-	mount(element) {
-		super.mount(element);
-		this.children = new ActivitesComponent();
+	mount(element, index) {
+		super.mount(element, index);
+		this.children = new ActivitesComponent(index);
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}

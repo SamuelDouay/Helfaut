@@ -5,14 +5,17 @@ export class OngletContentList extends Component {
 	ongletList;
 	slideIndex = 1;
 
-	constructor(ongletList) {
+	constructor(ongletList, current) {
 		super('div', null, [
 			...ongletList.map(
 				(value, index) =>
-					new OngletContentCard({
-						nbId: index + 1,
-						value: value,
-					})
+					new OngletContentCard(
+						{
+							nbId: index + 1,
+							value: value,
+						},
+						current
+					)
 			),
 		]);
 		this.ongletList = ongletList;
