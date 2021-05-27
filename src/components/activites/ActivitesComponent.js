@@ -4,10 +4,10 @@ import { Calendrier } from './Calendrier';
 import { Information } from './Information';
 
 export class ActivitesComponent extends Component {
-	constructor() {
+	constructor(onglet) {
 		super('div', { name: 'id', value: 'container' }, [
-			new OngletList(['Calendrier 2021', 'Informations']),
-			new OngletContentList([new Calendrier(), new Information()]),
+			new OngletList(['Calendrier 2021', 'Informations'], onglet),
+			new OngletContentList([new Calendrier(), new Information()], onglet),
 		]);
 	}
 }

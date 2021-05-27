@@ -6,20 +6,26 @@ import { CompteRendu } from './CompteRendu';
 import { ConseilMunicipal } from './ConseilMunicipal';
 
 export class VieCommunaleComponent extends Component {
-	constructor() {
+	constructor(onglet) {
 		super('div', { name: 'id', value: 'container' }, [
-			new OngletList([
-				'Conseil municipal',
-				'Mot du maire',
-				'Comptes rendus',
-				'Bulletins municipaux',
-			]),
-			new OngletContentList([
-				new ConseilMunicipal(),
-				new MotDuMaire(),
-				new CompteRendu(),
-				new Bulletins(),
-			]),
+			new OngletList(
+				[
+					'Conseil municipal',
+					'Mot du maire',
+					'Comptes rendus',
+					'Bulletins municipaux',
+				],
+				onglet
+			),
+			new OngletContentList(
+				[
+					new ConseilMunicipal(),
+					new MotDuMaire(),
+					new CompteRendu(),
+					new Bulletins(),
+				],
+				onglet
+			),
 		]);
 	}
 }

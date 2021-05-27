@@ -94,7 +94,7 @@ header {
     position: relative;
 }
 
-#menu_navigation >li:hover ul {
+#menu_navigation >li:hover ul, ul:focus {
     display: block;
 }
 

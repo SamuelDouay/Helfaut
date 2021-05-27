@@ -6,9 +6,9 @@ export class Pratique extends Page {
 		super('Pratique', 'home');
 	}
 
-	mount(element) {
-		super.mount(element);
-		this.children = new PratiqueComponent();
+	mount(element, index) {
+		super.mount(element, index);
+		this.children = new PratiqueComponent(index);
 		this.element.innerHTML = this.render();
 		this.children.initEvent();
 	}

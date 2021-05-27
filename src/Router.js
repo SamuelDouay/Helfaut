@@ -8,10 +8,17 @@ export default class Router {
 
 	static set menuNavigation(element) {
 		this.#menuNavigation = element;
-		this.#menuNavigation.querySelectorAll('a').forEach(link => {
+		this.#menuNavigation.querySelectorAll('a').forEach((link, index) => {
 			link.addEventListener('click', e => {
 				e.preventDefault();
-				this.navigate(e.currentTarget.getAttribute('href'));
+				if (index === 14) index = 6;
+				else if (index > 13) index = index - 14;
+				else if (index > 8) index = index - 8;
+				else if (index > 4 && index != 5) index = index - 5;
+				this.navigate(
+					e.currentTarget.getAttribute('href'),
+					index - 1 === -1 ? index : index - 1
+				);
 			});
 		});
 	}
@@ -22,9 +29,8 @@ export default class Router {
 	 * @param {string} path
 	 * @param {boolean} pushState
 	 */
-	static navigate(path, pushState = true) {
+	static navigate(path, index, pushState = true) {
 		const route = this.routes.find(route => route.pathMatcher.test(path));
-
 		if (route) {
 			window.scrollTo(0, 0);
 
@@ -39,8 +45,9 @@ export default class Router {
 			if (this.currentPage) {
 				this.currentPage.unmount();
 			}
-			route.page.mount(this.sectionHTMLContent);
+			route.page.mount(this.sectionHTMLContent, index == 0 ? 1 : index);
 			this.currentPage = route.page;
+
 			document.querySelector('head title').innerText = route.page.pageTitle;
 			document.querySelector('#contain_header_page_title').innerHTML =
 				route.page.pageName;
@@ -66,6 +73,6 @@ export default class Router {
 		};
 
 		window.onpopstate = handleBack;
-		this.navigate(document.location.pathname);
+		this.navigate(document.location.pathname, 0);
 	}
 }
