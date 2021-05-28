@@ -1,5 +1,5 @@
 const API_URL =
-	'http://api.openweathermap.org/data/2.5/weather?q=helfaut&lang=FR&units=metric&appid=d0f0478fb759f869cb291add389c4369';
+	'https://api.openweathermap.org/data/2.5/weather?q=helfaut&lang=FR&units=metric&appid=d0f0478fb759f869cb291add389c4369';
 
 export class MeteoResources {
 	constructor() {}
