@@ -1,1 +1,1 @@
-export * from '/Resources.js';
+export * from '/MeteoResources.js';

@@ -58,6 +58,11 @@
     width: 100%;
 }
 
+#perssones_container_bis{
+    width: 95%;
+    margin: auto;
+}
+
 #personne_container {
     width: 100%;
     display: flex;

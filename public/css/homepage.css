@@ -78,18 +78,23 @@
     margin-top: 20px;
     width: 300px;
     height: 280px;
-    background: var(--color-seg);
+    background: url("/images/mairie.jpg");
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    filter: grayscale(35%);
 }
 
 #search_home{
     width: 300px;
     height: 280px;
-    background: var(--color-seg);
     display: flex;
     flex-direction:column;
     align-items: center;
+    background: var(--color-seg);
 }
 
 /* HISTOIRE */
@@ -169,6 +174,7 @@
 }
 
 #date_meteo{
+    margin-top: 5px;
     font-size: 12px;
 }
 
@@ -221,26 +227,21 @@
 
 /* INFO - MARIE */
 
-#information_homepage > * {
-    width: 80%;
-    margin: 12px auto;
-    font-size: 14px;
+#info_horaire {
+   margin-top: 15px;
+   text-align: center;
+   width: 200px;
+   height: 25px;
+   border-radius: 15px;
+   background-color: rgba(70, 68, 68, 0.5);
+   color: wheat;
 }
 
 #info_title {
-    text-align: center;
-    margin: 15px auto;
-    font-size: 15px;
+    margin-top: 35%;
+    font-weight: bold;
+    color: #fff;
 }
-
-#info_num_tel {
-    margin-top: 35px;
-}
-
-#info_mail{
-    margin:0 auto;
-}
-
 /* NEWS - HOME PAGE */
 
 #tille_new {

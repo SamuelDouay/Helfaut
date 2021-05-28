@@ -1,6 +1,10 @@
 import Router from './Router';
 
-window.onload = () => window.scrollTo(0, 0);
+let dark = false;
+window.onload = () => {
+	window.scrollTo(0, 0);
+	changeColor();
+};
 
 // On initialise le Router en lui passant la ou le contenu des pages doit etre rendu et le menu de notre SPA.
 Router.initRouter(
@@ -11,24 +15,27 @@ Router.initRouter(
 
 function handleEventLog(e = null) {
 	const light_darck = document.querySelector('#theme_l_d');
-	let dark = false;
 	light_darck.addEventListener('click', e => {
 		e.preventDefault();
-		if (!dark) {
-			darkMode();
-			dark = true;
-		} else {
-			lightMode();
-			dark = false;
-		}
+		changeColor();
 	});
 }
 
 handleEventLog();
 window.addEventListener('log', handleEventLog);
 
+function changeColor() {
+	if (!dark) {
+		darkMode();
+		dark = true;
+	} else {
+		lightMode();
+		dark = false;
+	}
+}
+
 function darkMode() {
-	const color_darck = ['#212121', '#181818', '#BABABA', '#fff'];
+	const color_darck = ['#212121', '#181818', '#BABABA', '#ddd'];
 	document
 		.querySelector('#theme_l_d')
 		.setAttribute('src', '/images/moon_light.svg');

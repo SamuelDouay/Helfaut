@@ -7,15 +7,18 @@ export class ConseilMunicipal extends Component {
 		super('div', { name: 'id', value: 'conseil_container' }, [
 			new Div(
 				{ name: 'id', value: 'container_arbre' },
-				new PersonneList([
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-					{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
-				])
+				new Div(
+					{ name: 'id', value: 'perssones_container_bis' },
+					new PersonneList([
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+						{ nom: 'NOM', prenom: 'Prenom', fonction: 'Fonction' },
+					])
+				)
 			),
 			new Div({ name: 'class', value: 'container_autre' }, [
 				new Div({ name: 'class', value: 'conseilles_municipaux' }, [
