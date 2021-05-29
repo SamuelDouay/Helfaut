@@ -1,6 +1,6 @@
 import { Component, Div } from '../../global';
-import { SearchInfo } from './SearchInfo';
 import { SearchInfoList } from './SearchInfoList';
+import Router from '../../../Router';
 
 export class SearchHome extends Component {
 	constructor() {
@@ -20,19 +20,68 @@ export class SearchHome extends Component {
 				'Pratique',
 				new Div({ name: 'id', value: 'pratique_search' }, [
 					new Div({ name: 'id', value: 'col_1' }, [
-						new Div(null, 'Horaires mairie'),
-						new Div(null, 'Salle multifonction'),
+						new Div(
+							null,
+							new Component(
+								'a',
+								{ name: 'href', value: '/pratique' },
+								'Horaires mairie'
+							)
+						),
+						new Div(
+							null,
+							new Component(
+								'a',
+								{ name: 'href', value: '/pratique' },
+								'Salle multifonction'
+							)
+						),
 					]),
 					new Div({ name: 'id', value: 'col_2' }, [
-						new Div(null, 'Services'),
-						new Div(null, 'Ecoles'),
+						new Div(
+							null,
+							new Component(
+								'a',
+								{ name: 'href', value: '/pratique' },
+								'Services'
+							)
+						),
+						new Div(
+							null,
+							new Component('a', { name: 'href', value: '/pratique' }, 'Ecoles')
+						),
 					]),
 					new Div({ name: 'id', value: 'col_3' }, [
-						new Div(null, 'Economie'),
-						new Div(null, 'Cimetière'),
+						new Div(
+							null,
+							new Component(
+								'a',
+								{ name: 'href', value: '/pratique' },
+								'Economie'
+							)
+						),
+						new Div(
+							null,
+							new Component(
+								'a',
+								{ name: 'href', value: '/pratique' },
+								'Cimetière'
+							)
+						),
 					]),
 				]),
 			]),
 		]);
+	}
+
+	initEvent() {
+		const lien = document.querySelectorAll('#pratique_search a');
+		lien.forEach((a, index) => {
+			a.addEventListener('click', e => {
+				e.preventDefault();
+				console.log(index);
+				Router.navigate(e.currentTarget.getAttribute('href'), index + 1);
+			});
+		});
 	}
 }

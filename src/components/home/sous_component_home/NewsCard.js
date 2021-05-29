@@ -1,5 +1,4 @@
 import { Component, Div } from '../../global';
-import Router from '../../../Router';
 
 export class NewsCard extends Component {
 	constructor({ date, info }, index) {
@@ -22,7 +21,7 @@ export class NewsCard extends Component {
 					new Component(
 						'a',
 						[
-							{ name: 'id', value: 'homepage_lien' },
+							{ name: 'class', value: 'homepage_lien' },
 							{ name: 'href', value: '/activites' },
 						],
 						'En savoir plus...'
@@ -31,13 +30,5 @@ export class NewsCard extends Component {
 				new Div({ name: 'class', value: 'media_content' }, '[Texte ou photo]'),
 			]
 		);
-	}
-
-	initEvent() {
-		const lien = document.querySelector('#homepage_lien');
-		lien.addEventListener('click', e => {
-			e.preventDefault();
-			Router.navigate(e.currentTarget.getAttribute('href'));
-		});
 	}
 }

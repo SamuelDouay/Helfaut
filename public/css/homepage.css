@@ -225,6 +225,11 @@
     justify-content: space-between;
 }
 
+#pratique_search a {    
+    text-decoration: none;
+    color: var(--color-font);
+}
+
 /* INFO - MARIE */
 
 #info_horaire {
@@ -291,7 +296,7 @@
     font-size: 30px;
 }
 
-#homepage_lien {
+.homepage_lien {
     margin: auto;
     margin-top: 10px;
     text-decoration: none;

@@ -23,7 +23,7 @@ export class HistoireHomePage extends Component {
 		const lien = document.querySelector('#histoire_homepage_lien');
 		lien.addEventListener('click', e => {
 			e.preventDefault();
-			Router.navigate(e.currentTarget.getAttribute('href'));
+			Router.navigate(e.currentTarget.getAttribute('href'), 0);
 		});
 	}
 }

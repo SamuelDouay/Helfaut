@@ -1,5 +1,6 @@
 import { Component, Div } from '../../global';
 import { NewsCard } from './NewsCard';
+import Router from '../../../Router';
 
 export class NewsList extends Component {
 	newlist;
@@ -20,6 +21,13 @@ export class NewsList extends Component {
 				event.preventDefault();
 				if (index === 0) this.plusSlides(-1);
 				else this.plusSlides(1);
+			});
+		});
+
+		document.querySelectorAll('.homepage_lien').forEach(lien => {
+			lien.addEventListener('click', e => {
+				e.preventDefault();
+				Router.navigate(e.currentTarget.getAttribute('href'), 2);
 			});
 		});
 	}
