@@ -148,3 +148,25 @@ li a{
     width: 250px;
     z-index: -1;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    #header {
+        max-width: 790px;
+        width: 100%;
+    }
+
+    #menu_navigation .menu_nav_page:nth-child(1) ul, #menu_navigation .menu_nav_page:nth-child(2) ul {
+        padding-left: 0;
+    }
+
+    #menu_navigation .menu_nav_page:nth-child(3) ul,  #menu_navigation .menu_nav_page:nth-child(4) ul  {
+        padding-left: 0;
+    }
+
+    li a {
+        font-size: 10px;
+    }
+    
+}

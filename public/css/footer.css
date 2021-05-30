@@ -38,3 +38,10 @@ footer {
     font-size: 15px;
     margin-bottom: 12px;
 }
+
+@media (max-width: 800px) {
+    #footer {
+        max-width: 790px;
+        width: 100%;
+    }
+}

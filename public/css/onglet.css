@@ -45,3 +45,9 @@
     text-decoration: none;
     color: var(--color-font);
 }
+
+@media (max-width: 800px) {
+    #onglets_buttons{
+        font-size: 10px;
+    }
+}
