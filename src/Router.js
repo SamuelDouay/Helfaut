@@ -11,8 +11,8 @@ export default class Router {
 		this.#menuNavigation.querySelectorAll('a').forEach((link, index) => {
 			link.addEventListener('click', e => {
 				e.preventDefault();
-				if (index === 14) index = 6;
-				else if (index > 13) index = index - 14;
+				if (index > 16) index = index - 15;
+				else if (index > 15) index = index - 14;
 				else if (index > 8) index = index - 8;
 				else if (index > 4 && index != 5) index = index - 5;
 				this.navigate(

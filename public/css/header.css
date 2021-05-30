@@ -84,10 +84,31 @@ header {
     position: absolute;
 }
 
+#menu_navigation .menu_nav_page:nth-child(1) ul {
+    padding-left: 35px;
+}
+
+#menu_navigation .menu_nav_page:nth-child(2) ul {
+    padding-left: 75px;
+}
+
+#menu_navigation .menu_nav_page:nth-child(3) ul {
+    padding-left: 70px;
+}
+
+#menu_navigation .menu_nav_page:nth-child(4) ul {
+    padding-left: 70px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--color-font);
+}
+
 .menu_nav_page li {
     margin-top: 5px;
     font-size: 12px;
-    height: 20px;
+    height: 15px;
     width: 100%;
     margin-left: 30px;
     text-align: justify;
@@ -96,11 +117,6 @@ header {
 
 .menu_nav_page:hover ul {
     display: block;
-}
-
-li a{
-    text-decoration: none;
-    color: var(--color-font);
 }
 
 /* DEUXIEME PARTIE */

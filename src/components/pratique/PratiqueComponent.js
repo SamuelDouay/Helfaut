@@ -5,6 +5,7 @@ import { Economie } from './Economie';
 import { Horaire } from './Horaire';
 import { SalleMultifonction } from './SalleMultifonction';
 import { Service } from './Service';
+import { Cimetiere } from './Cimetiere';
 
 export class PratiqueComponent extends Component {
 	constructor(onglet) {
@@ -16,6 +17,7 @@ export class PratiqueComponent extends Component {
 					'Services',
 					'Ecoles',
 					'Economie',
+					'Cimetière',
 				],
 				onglet
 			),
@@ -26,6 +28,7 @@ export class PratiqueComponent extends Component {
 					new Service(),
 					new Ecoles(),
 					new Economie(),
+					new Cimetiere(),
 				],
 				onglet
 			),
