@@ -138,3 +138,14 @@
 .conseilles_municipaux > *:nth-child(2){
     margin-left: 10px;
 }
+
+@media (max-width: 400px) {
+
+    .personne{
+        width: 100%;
+    }
+
+    #autre_personne{
+        flex-direction: column;
+    }
+}

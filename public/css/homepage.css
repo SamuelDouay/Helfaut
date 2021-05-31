@@ -392,4 +392,23 @@
     #maps {
         margin-left: 220px;
     }
+
+    #news_container {
+        width: 100%;
+    }
+
+    .news {
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .title_news_content{
+        width: 100%;
+        float: none;
+    }
+
+    .media_content {
+        display: none;
+    }
+    
 }
