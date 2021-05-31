@@ -352,7 +352,7 @@
 
 @media (max-width : 400px) {
     #new_homepage {
-        width: 350px;
+        width: 320px;
     }
 
     #homePage > *:nth-child(2){
@@ -370,7 +370,7 @@
 
     #meteo_and_chiffre{
         flex-direction: row;
-        width: 350px;
+        width: 320px;
         height: 200px;
     }
     

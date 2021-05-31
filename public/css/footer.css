@@ -42,6 +42,11 @@ footer {
 @media (max-width: 800px) {
     #footer {
         max-width: 790px;
-        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    #footer {
+        max-width: 395px;
     }
 }
