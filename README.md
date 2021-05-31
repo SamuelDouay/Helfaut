@@ -1,28 +1,33 @@
-## Init depôt
+## 1) Projet
 
-```bash
-    npm init
-```
+Refonte du site de la commune d'Helfaut, le rendre au gout du jour et responsive.
 
-## Install depôt
+Collaborateurs :
+
+> Phillipe Chevalier        -   Designer
+
+> Samuel Douay--Ryckelynck  -   Developpeur
+
+## 2) Lancement du projet
+ ##### Installer le projet
 
 ```bash
     npm install
 ```
 
-## Run project
+##### Demarer le serveur local
 
 ```bash
     npm run start
 ```
 
-## Build depôt
+##### Compiler le code
 
 ```bash
     npm run build
 ```
 
-## Build depôt direct
+##### Compiler le code en direct
 
 ```bash
     npm run watch
