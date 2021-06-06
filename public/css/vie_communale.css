@@ -149,3 +149,14 @@
         flex-direction: column;
     }
 }
+
+@media (max-width : 800px){
+    .personne{
+        width: 50%;
+    }
+
+    #container_arbre{
+        margin: auto;
+        width: 95%;
+    }
+}

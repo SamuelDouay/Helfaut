@@ -6,7 +6,7 @@ export class Ecoles extends Component {
 			new Div({ name: 'class', value: 'etablissement' }, [
 				new Div(
 					{ name: 'class', value: 'ecole_name' },
-					'École primaire Françoise Dolto Kelgommard'
+					'École primaire Françoise Dolto - Pauline Kelgomard'
 				),
 				new Div({ name: 'class', value: 'prestations_container' }, [
 					new Div(

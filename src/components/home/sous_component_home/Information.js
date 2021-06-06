@@ -27,7 +27,7 @@ export class Information extends Component {
 				horraire_affichage = 'Ouvert - Ferme à 17h30';
 			else
 				this.jour === 2
-					? (horraire_affichage = 'Ouvre demain à 8h30')
+					? (horraire_affichage = 'Ouvre demain à 9h')
 					: (horraire_affichage = 'Ouvre demain à 8h30');
 		}
 
