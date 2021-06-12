@@ -6,7 +6,7 @@ export class HistoireHomePage extends Component {
 		super('div', { name: 'id', value: 'histoire_homepage' }, [
 			new Div(
 				{ name: 'id', value: 'histoire_homepage_text' },
-				'Découvrez le patrimoine histoirique du village...'
+				'Découvrez le patrimoine historique du village...'
 			),
 			new Component(
 				'a',
