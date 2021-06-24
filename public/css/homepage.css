@@ -166,12 +166,12 @@
 /* METEO */
 
 #meteo_temperature{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 #meteo_image{
-    width: 25px;
+    width: 35px;
 }
 
 #date_meteo{

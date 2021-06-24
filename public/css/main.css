@@ -1,9 +1,9 @@
 :root {
-    --color-main : #f1f1f1; /*Principale*/
-    --color-seg : #ffffff; /*segondaire*/
+    --color-main : #181818; /*Principale*/
+    --color-seg : #212121; /*segondaire*/
     --color-ter : #bababa; /*troisième*/
-	--color-font : #000;
-	--color-footer : #bababa;
+	--color-font : #ddd;
+	--color-footer : #212121;
 }
 
 * {
