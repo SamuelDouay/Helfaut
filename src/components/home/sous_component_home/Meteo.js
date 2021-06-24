@@ -26,6 +26,8 @@ export class Meteo extends Component {
 		this.meteoRessource.getOne().then(rep => {
 			document.querySelector('#meteo_temperature').innerHTML =
 				Math.round(rep.main.temp) + ' °C';
+			document.querySelector('#meteo_image').setAttribute('src') =
+				`https://openweathermap.org/img/wn/${rep.weather.icon}@2x.png`;
 		});
 	}
 
