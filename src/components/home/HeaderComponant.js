@@ -1,4 +1,4 @@
-import { Component, Div } from '../global';
+import { Component } from '../global';
 
 export class HeaderComponant extends Component {
 	constructor() {
