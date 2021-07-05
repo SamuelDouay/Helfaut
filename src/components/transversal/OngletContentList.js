@@ -1,3 +1,4 @@
+import { validate } from 'webpack';
 import { Component } from '../global';
 import { OngletContentCard } from './OngletContentCard';
 
@@ -24,9 +25,9 @@ export class OngletContentList extends Component {
 	setOnglet(value) {
 		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			if (li.getAttribute('id') == value) {
-				let atClass = document.createAttribute('class');
-				atClass.value = 'onglet_active';
-				li.setAttributeNode(atClass);
+					let atClass = document.createAttribute('class');
+					atClass.value = 'onglet_active';
+					li.setAttributeNode(atClass);
 			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
 			}
