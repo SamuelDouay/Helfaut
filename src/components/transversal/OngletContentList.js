@@ -1,9 +1,9 @@
-import { validate } from 'webpack';
 import { Component } from '../global';
 import { OngletContentCard } from './OngletContentCard';
 
 export class OngletContentList extends Component {
 	ongletList;
+	ongletCurrent;
 	slideIndex = 1;
 
 	constructor(ongletList, current) {
@@ -19,17 +19,22 @@ export class OngletContentList extends Component {
 					)
 			),
 		]);
+		this.ongletCurrent = current;
 		this.ongletList = ongletList;
 	}
 
 	setOnglet(value) {
 		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			if (li.getAttribute('id') == value) {
-					let atClass = document.createAttribute('class');
-					atClass.value = 'onglet_active';
-					li.setAttributeNode(atClass);
+				let atClass = document.createAttribute('class');
+				atClass.value = 'onglet_active';
+				li.setAttributeNode(atClass);
+
+				matchMedia ? li.style.display = 'block' : '';
+
 			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
+				matchMedia && li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' : '';
 			}
 		});
 		document.querySelectorAll('.container_onglet_contenue').forEach(e => {
@@ -38,14 +43,24 @@ export class OngletContentList extends Component {
 		document.querySelector(
 			`#onglet_${value.charAt(value.length - 1)}`
 		).style.display = 'block';
+		this.ongletCurrent = parseInt(value.charAt(value.length - 1));
 	}
 
 	initEvent() {
-		document.querySelectorAll('#onglets_buttons li').forEach(li => {
+		document.querySelectorAll('#onglets_buttons li').forEach((li) => {
 			li.addEventListener('click', ev => {
 				ev.preventDefault();
 				if (li.getAttribute('class') == null) {
-					this.setOnglet(li.getAttribute('id'));
+					if (li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_') {
+						this.setOnglet(li.getAttribute('id'));
+					}
+					else {
+						if (this.ongletCurrent === this.ongletList.length) {
+							this.ongletCurrent = 0;
+						}
+						this.setOnglet(`#onglet_${this.ongletCurrent + 1}`);
+
+					}
 				}
 			});
 		});
