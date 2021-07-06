@@ -34,7 +34,7 @@ export class OngletContentList extends Component {
 
 			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
-
+        
 				if (matchMedia) {
 					li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' :  li.style.display = 'block';
 				}
@@ -58,7 +58,6 @@ export class OngletContentList extends Component {
 						this.setOnglet(li.getAttribute('id'));
 					}
 					else {
-
 						if (document.querySelectorAll('#onglets_buttons li')[0] === li) {
 							if (this.ongletCurrent === 1) {
 								this.ongletCurrent = this.ongletList.length + 1;
