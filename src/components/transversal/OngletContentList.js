@@ -34,7 +34,10 @@ export class OngletContentList extends Component {
 
 			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
-				matchMedia && li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' : '';
+        
+				if (matchMedia) {
+					li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' :  li.style.display = 'block';
+				}
 			}
 		});
 		document.querySelectorAll('.container_onglet_contenue').forEach(e => {
@@ -55,10 +58,18 @@ export class OngletContentList extends Component {
 						this.setOnglet(li.getAttribute('id'));
 					}
 					else {
-						if (this.ongletCurrent === this.ongletList.length) {
-							this.ongletCurrent = 0;
+						if (document.querySelectorAll('#onglets_buttons li')[0] === li) {
+							if (this.ongletCurrent === 1) {
+								this.ongletCurrent = this.ongletList.length + 1;
+							}
+							this.setOnglet(`#onglet_${this.ongletCurrent - 1}`);
 						}
-						this.setOnglet(`#onglet_${this.ongletCurrent + 1}`);
+						else {
+							if (this.ongletCurrent === this.ongletList.length) {
+								this.ongletCurrent = 0;
+							}
+							this.setOnglet(`#onglet_${this.ongletCurrent + 1}`);
+						}
 
 					}
 				}
