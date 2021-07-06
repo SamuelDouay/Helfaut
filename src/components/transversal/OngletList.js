@@ -9,21 +9,21 @@ export class OngletList extends Component {
 		super('div', { name: 'id', value: 'onglets_buttons' }, [
 			mediaMatches ?  new OngletCard({largeur: 10,
 				nbId: -1,
-				value: '<',}, current) : null ,
+				value:'<' }, current) : null ,
 			...ongletList.map(
 				(value, index) =>
 					new OngletCard(
 						{
-							largeur: mediaMatches ? 80 : 100 / ongletList.length - 1,
+							largeur: mediaMatches ? 70 : 100 / ongletList.length - 1,
 							nbId: index + 1,
 							value: value,
 						},
 						current
 					)
 			),
-			mediaMatches ?  new OngletCard({largeur: 10 / ongletList.length - 1,
+			mediaMatches ?  new OngletCard({largeur: 10, 
 				nbId: -1,
-				value: '>',}, current) : null ,
+				value: '>'}, current) : null ,
 		]);
 		this.ongletList = ongletList;
 	}

@@ -38,6 +38,12 @@ main{
 	}
 }
 
+@media (max-width : 400px) {
+	main {
+		max-width: 350px;
+	}
+}
+
 #appContainer {
 	margin-top: 150px;
 	margin-bottom: 100px;
