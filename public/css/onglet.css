@@ -53,4 +53,7 @@
 }
 
 @media (max-width: 400px){
+    #onglets_buttons{
+        font-size: 15px;    
+    }
 }

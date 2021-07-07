@@ -24,20 +24,18 @@ export class OngletContentList extends Component {
 	}
 
 	setOnglet(value) {
+		const mediaMatches = window.matchMedia("(max-width : 400px)").matches;
 		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			if (li.getAttribute('id') == value) {
 				let atClass = document.createAttribute('class');
 				atClass.value = 'onglet_active';
 				li.setAttributeNode(atClass);
 
-				matchMedia ? li.style.display = 'block' : '';
+				mediaMatches ? li.style.display = 'block' : '';
 
 			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
-        
-				if (matchMedia) {
-					li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' :  li.style.display = 'block';
-				}
+				mediaMatches && li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' :  li.style.display = 'block';
 			}
 		});
 		document.querySelectorAll('.container_onglet_contenue').forEach(e => {
