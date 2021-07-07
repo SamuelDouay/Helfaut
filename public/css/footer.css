@@ -48,5 +48,6 @@ footer {
 @media (max-width: 400px) {
     #footer {
         max-width: 395px;
+        padding-left: 25px;
     }
 }
