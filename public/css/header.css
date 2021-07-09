@@ -25,6 +25,10 @@ header {
 
 /* AGENCEMENT */
 
+#croix {
+    display: none;
+}
+
 #menu_header {
     background-color: var(--color-seg);
     width: 100%;
@@ -175,9 +179,70 @@ li a{
     #header {
         max-width: 395px;
         width: 100%;
+        height: 250px;
+    }
+
+    #menu_header {
+        display: none;
+    }
+
+    #croix {
+        display: block;
+        position: absolute;
+        margin-top: 75px;
+        margin-left: 15px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--color-ter);
+        border-radius: 10px;
+        background-color: white;
+    }
+
+
+    #croix img {
+        width: 18px;
+        margin-left: 7px;
+        margin-top: 7px;
+    }
+
+    #header_title {
+        height: 100%;
+        font-weight: bold;
+        /* display: none; */
     }
     
+    #menu_header {
+        height: 100%;
+    }
+
     #menu_navigation {
         flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .menu_nav_page > a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .menu_nav_page ul {
+        padding:0;
+        height: auto;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 3px;
+        position: relative;
+    }
+    .menu_nav_page li {
+        height: 10px;
+        position: relative;
+        color: var(--color-ter);
+    }
+
+    #menu_home, #menu_theme {
+        display: none;
     }
 }
