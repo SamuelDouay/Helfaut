@@ -6,6 +6,8 @@ window.onload = () => {
 	changeColor();
 };
 
+
+
 // On initialise le Router en lui passant la ou le contenu des pages doit etre rendu et le menu de notre SPA.
 Router.initRouter(
 	document.querySelector('#appContainer'),
@@ -19,6 +21,22 @@ function handleEventLog(e = null) {
 		e.preventDefault();
 		changeColor();
 	});
+
+	let menu = false;
+	const menu_click = document.querySelector("#croix");
+	menu_click.addEventListener('click', e => {
+		e.preventDefault();
+		if (! menu) {
+			document.querySelector("#menu_header").style.display = 'block';
+			document.querySelector("#header_title").style.display = 'none';
+			menu = true;
+		}
+		else {
+			document.querySelector("#menu_header").style.display = 'none';
+			document.querySelector("#header_title").style.display = 'block';
+			menu = false;
+		}
+	})
 }
 
 handleEventLog();
