@@ -1,12 +1,11 @@
 import Router from './Router';
 
 let dark = false;
+let menu = false;
 window.onload = () => {
 	window.scrollTo(0, 0);
 	changeColor();
 };
-
-
 
 // On initialise le Router en lui passant la ou le contenu des pages doit etre rendu et le menu de notre SPA.
 Router.initRouter(
@@ -21,26 +20,30 @@ function handleEventLog(e = null) {
 		e.preventDefault();
 		changeColor();
 	});
-
-	let menu = false;
 	const menu_click = document.querySelector("#croix");
 	menu_click.addEventListener('click', e => {
 		e.preventDefault();
-		if (! menu) {
-			document.querySelector("#menu_header").style.display = 'block';
-			document.querySelector("#header_title").style.display = 'none';
-			menu = true;
-		}
-		else {
-			document.querySelector("#menu_header").style.display = 'none';
-			document.querySelector("#header_title").style.display = 'block';
-			menu = false;
-		}
+		changemenu();
 	})
 }
 
 handleEventLog();
 window.addEventListener('log', handleEventLog);
+
+function changemenu() {
+	if (!menu) {
+		document.querySelector("#menu_header").style.display = 'block';
+		document.querySelector("#header_title").style.display = 'none';
+		document.querySelector('#croix img').setAttribute('src', '/images/croix.svg');
+		menu = true;
+	}
+	else {
+		document.querySelector("#menu_header").style.display = 'none';
+		document.querySelector("#header_title").style.display = 'block';
+		document.querySelector('#croix img').setAttribute('src', '/images/humburger.svg');
+		menu = false;
+	}
+}
 
 function changeColor() {
 	if (!dark) {

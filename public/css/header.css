@@ -27,6 +27,7 @@ header {
 
 #croix {
     display: none;
+    z-index: 101;
 }
 
 #menu_header {
@@ -184,6 +185,7 @@ li a{
 
     #menu_header {
         display: none;
+        height: 100%;
     }
 
     #croix {
@@ -208,11 +210,6 @@ li a{
     #header_title {
         height: 100%;
         font-weight: bold;
-        /* display: none; */
-    }
-    
-    #menu_header {
-        height: 100%;
     }
 
     #menu_navigation {
