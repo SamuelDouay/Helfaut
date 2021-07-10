@@ -1,6 +1,6 @@
 import Router from './Router';
 
-let dark = false;
+let dark = true;
 let menu = false;
 window.onload = () => {
 	window.scrollTo(0, 0);
@@ -33,13 +33,15 @@ window.addEventListener('log', handleEventLog);
 function changemenu() {
 	if (!menu) {
 		document.querySelector("#menu_header").style.display = 'block';
-		document.querySelector("#header_title").style.display = 'none';
+		//document.querySelector("#header_title").style.display = 'none';
+		document.querySelector("#header_title").style.height = '0';
 		document.querySelector('#croix img').setAttribute('src', '/images/croix.svg');
 		menu = true;
 	}
 	else {
 		document.querySelector("#menu_header").style.display = 'none';
-		document.querySelector("#header_title").style.display = 'block';
+		//document.querySelector("#header_title").style.display = 'block';
+		document.querySelector("#header_title").style.height = '100%';
 		document.querySelector('#croix img').setAttribute('src', '/images/humburger.svg');
 		menu = false;
 	}
