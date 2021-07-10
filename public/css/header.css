@@ -185,6 +185,7 @@ li a{
     #header {
         max-width: 395px;
         width: 100%;
+        height: 275px;
     }
 
     #menu_header {
