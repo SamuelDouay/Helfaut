@@ -196,8 +196,8 @@ li a{
     #croix {
         display: block;
         position: absolute;
-        margin-top: 75px;
-        margin-left: 15px;
+        margin-top: 5px;
+        margin-left: 5px;
         width: 35px;
         height: 35px;
         border: 1px solid var(--color-ter);
@@ -219,7 +219,7 @@ li a{
 
     #menu_navigation {
         flex-direction: column;
-        margin-top: 85px;
+        margin-top: 10px;
     }
 
     .menu_nav_page > a{
@@ -248,6 +248,10 @@ li a{
     }
 
     #menu_home, #menu_theme {
+        display: none;
+    }
+
+    .menu_nav_page:hover ul {
         display: none;
     }
 }

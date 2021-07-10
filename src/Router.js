@@ -15,6 +15,12 @@ export default class Router {
 				else if (index > 15) index = index - 14;
 				else if (index > 8) index = index - 8;
 				else if (index > 4 && index != 5) index = index - 5;
+				
+				if (window.matchMedia("(max-width : 400px)").matches){
+					document.querySelector("#menu_header").style.display = 'none';
+					document.querySelector('#croix img').setAttribute('src', '/images/humburger.svg');
+					document.querySelector("#header_title").style.height = '100%';
+				}
 				this.navigate(
 					e.currentTarget.getAttribute('href'),
 					index - 1 === -1 ? index : index - 1
