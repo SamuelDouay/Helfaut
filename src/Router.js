@@ -19,6 +19,11 @@ export default class Router {
 					e.currentTarget.getAttribute('href'),
 					index - 1 === -1 ? index : index - 1
 				);
+				if (window.matchMedia("(max-width : 400px)").matches){
+					document.querySelector("#menu_header").style.display = 'none';
+					document.querySelector('#croix img').setAttribute('src', '/images/humburger.svg');
+					document.querySelector("#header_title").style.height = '100%';
+				}
 			});
 		});
 	}
