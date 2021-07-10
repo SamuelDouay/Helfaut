@@ -1,59 +1,58 @@
 /* CONTENU ONGLET */
 
-.container_onglet_contenue{
-    margin-top: -10px;
-    height: 500px;
-    background: var(--color-seg);
-    overflow: auto;
+.container_onglet_contenue {
+	margin-top: -10px;
+	height: 500px;
+	background: var(--color-seg);
+	overflow: auto;
 }
-
 
 .container_onglet_contenue::-webkit-scrollbar {
-    width: 12px;
+	width: 12px;
 }
-  
+
 .container_onglet_contenue::-webkit-scrollbar-track {
-    background: transparent;
+	background: transparent;
 }
-  
+
 .container_onglet_contenue::-webkit-scrollbar-thumb {
-    background: #666666;
+	background: #666666;
 }
 
 /* BUTTON ONGLET */
 
-#onglets_buttons li{
-    background: var(--color-seg);
-    padding-top: 5px;
-    padding-left: 15px;
-    height: 35px;
-    cursor: pointer;
+#onglets_buttons li {
+	background: var(--color-seg);
+	padding-top: 5px;
+	padding-left: 15px;
+	height: 35px;
+	cursor: pointer;
 }
 
-.onglet_active  {
-    padding-bottom: 50px;
+.onglet_active {
+	padding-bottom: 50px;
 }
 
-#onglets_buttons{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#onglets_buttons {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 #onglets_buttons a {
-    text-decoration: none;
-    color: var(--color-font);
+	text-decoration: none;
+	color: var(--color-font);
 }
 
 @media (max-width: 800px) {
-    #onglets_buttons{
-        font-size: 10px;
-    }
+	#onglets_buttons {
+		font-size: 10px;
+	}
 }
 
-@media (max-width: 400px){
-    #onglets_buttons{
-        font-size: 15px;    
-    }
+@media (max-width: 400px) {
+	#onglets_buttons {
+		font-size: 15px;
+	}
 }

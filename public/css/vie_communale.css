@@ -1,162 +1,162 @@
 /* BULLETINS */
 
-#bulletin_municipaux, #compte_rendu_container{
-    width: 80%;
-    margin:auto;
-    margin-top: 25px; 
+#bulletin_municipaux,
+#compte_rendu_container {
+	width: 80%;
+	margin: auto;
+	margin-top: 25px;
 }
 
-#title_bulletin{
-    font-size: medium;
-    font-weight:bold;
+#title_bulletin {
+	font-size: medium;
+	font-weight: bold;
 }
 
-#bulletin_container{
-    width: 100%;
-    margin-top: 35px;
+#bulletin_container {
+	width: 100%;
+	margin-top: 35px;
 }
 
-.bulletin_card, .compte_rendu_card {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: 20px;
+.bulletin_card,
+.compte_rendu_card {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-bottom: 20px;
 }
 
-.bulletin_card img{
-    margin-left: 25px;
-    margin-top: 5px;
-    width: 15px;
+.bulletin_card img {
+	margin-left: 25px;
+	margin-top: 5px;
+	width: 15px;
 }
 
-.date_bulletin{
-    color: var(--color-ter);
-    font-size: 10px;
+.date_bulletin {
+	color: var(--color-ter);
+	font-size: 10px;
 }
 
 /* COMPTE RENDU  */
 
 .compte_rendu_card {
-    margin: 0;
-    align-items: center;
+	margin: 0;
+	align-items: center;
 }
 
 .compte_rendu_card img {
-    margin-left: 25px;
-    width: 15px;
+	margin-left: 25px;
+	width: 15px;
 }
 
 /* CONSEIL MUNICIPAL */
 
 #conseil_container {
-    margin : auto;
-    margin-top: 50px;
-    width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	width: 80%;
 }
 
-#container_arbre{
-    width: 100%;
+#container_arbre {
+	width: 100%;
 }
 
-#perssones_container_bis{
-    width: 95%;
-    margin: auto;
+#perssones_container_bis {
+	width: 95%;
+	margin: auto;
 }
 
 #personne_container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
 }
 
 #autre_personne {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #maire {
-    width: 100%;
-    margin-bottom: 25px;
+	width: 100%;
+	margin-bottom: 25px;
 }
 
 #maire > * {
-    margin: auto;
+	margin: auto;
 }
 
 .personne {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 33%;
-    margin-bottom: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 33%;
+	margin-bottom: 25px;
 }
 
-
-.photo_personne{
-    width: 120px;
-    height: 120px;
-    background-color: var(--color-main);
-    border-radius: 30px;
+.photo_personne {
+	width: 120px;
+	height: 120px;
+	background-color: var(--color-main);
+	border-radius: 30px;
 }
 
-.info_personne{
-    padding-left: 15px;
+.info_personne {
+	padding-left: 15px;
 }
 
-.info_personne > *:nth-child(1){
-    margin-bottom: 10px;
+.info_personne > *:nth-child(1) {
+	margin-bottom: 10px;
 }
 
-.info_personne > *:nth-child(2){
-    font-size: 12px;
+.info_personne > *:nth-child(2) {
+	font-size: 12px;
 }
 
-.conseilles_municipaux{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.conseilles_municipaux {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .conseilles_municipaux > * {
-    font-size: 12px;
+	font-size: 12px;
 }
 
-.title_conseil{
-    font-size: 15px;
+.title_conseil {
+	font-size: 15px;
 }
 
-.conseilles_municipaux > *:nth-child(1){
-    margin-bottom: 10px;
+.conseilles_municipaux > *:nth-child(1) {
+	margin-bottom: 10px;
 }
 
-.conseilles_municipaux > *:nth-child(2){
-    margin-left: 10px;
+.conseilles_municipaux > *:nth-child(2) {
+	margin-left: 10px;
 }
 
 @media (max-width: 400px) {
+	.personne {
+		width: 100%;
+	}
 
-    .personne{
-        width: 100%;
-    }
-
-    #autre_personne{
-        flex-direction: column;
-    }
+	#autre_personne {
+		flex-direction: column;
+	}
 }
 
-@media (max-width : 800px){
-    .personne{
-        width: 100%;
-    }
+@media (max-width: 800px) {
+	.personne {
+		width: 100%;
+	}
 
-    #container_arbre{
-        margin: auto;
-        width: 95%;
-    }
+	#container_arbre {
+		margin: auto;
+		width: 95%;
+	}
 }

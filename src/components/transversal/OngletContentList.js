@@ -24,18 +24,20 @@ export class OngletContentList extends Component {
 	}
 
 	setOnglet(value) {
-		const mediaMatches = window.matchMedia("(max-width : 400px)").matches;
+		const mediaMatches = window.matchMedia('(max-width : 400px)').matches;
 		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			if (li.getAttribute('id') == value) {
 				let atClass = document.createAttribute('class');
 				atClass.value = 'onglet_active';
 				li.setAttributeNode(atClass);
 
-				mediaMatches ? li.style.display = 'block' : '';
-
+				mediaMatches ? (li.style.display = 'block') : '';
 			} else if (li.hasAttribute('id')) {
 				li.removeAttribute('class');
-				mediaMatches && li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_' ? li.style.display = 'none' :  li.style.display = 'block';
+				mediaMatches &&
+				li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_'
+					? (li.style.display = 'none')
+					: (li.style.display = 'block');
 			}
 		});
 		document.querySelectorAll('.container_onglet_contenue').forEach(e => {
@@ -48,27 +50,27 @@ export class OngletContentList extends Component {
 	}
 
 	initEvent() {
-		document.querySelectorAll('#onglets_buttons li').forEach((li) => {
+		document.querySelectorAll('#onglets_buttons li').forEach(li => {
 			li.addEventListener('click', ev => {
 				ev.preventDefault();
 				if (li.getAttribute('class') == null) {
-					if (li.getAttribute('id').charAt(li.getAttribute('id').length - 2) == '_') {
+					if (
+						li.getAttribute('id').charAt(li.getAttribute('id').length - 2) ==
+						'_'
+					) {
 						this.setOnglet(li.getAttribute('id'));
-					}
-					else {
+					} else {
 						if (document.querySelectorAll('#onglets_buttons li')[0] === li) {
 							if (this.ongletCurrent === 1) {
 								this.ongletCurrent = this.ongletList.length + 1;
 							}
 							this.setOnglet(`#onglet_${this.ongletCurrent - 1}`);
-						}
-						else {
+						} else {
 							if (this.ongletCurrent === this.ongletList.length) {
 								this.ongletCurrent = 0;
 							}
 							this.setOnglet(`#onglet_${this.ongletCurrent + 1}`);
 						}
-
 					}
 				}
 			});

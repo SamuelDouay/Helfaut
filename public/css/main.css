@@ -1,9 +1,9 @@
 :root {
-    --color-main : #f1f1f1; /*Principale*/
-    --color-seg : #ffffff; /*segondaire*/
-    --color-ter : #bababa; /*troisième*/
-	--color-font : #000;
-	--color-footer : #bababa;
+	--color-main: #f1f1f1; /*Principale*/
+	--color-seg: #ffffff; /*segondaire*/
+	--color-ter: #bababa; /*troisième*/
+	--color-font: #000;
+	--color-footer: #bababa;
 }
 
 * {
@@ -26,19 +26,19 @@ body {
 	color: var(--color-font);
 }
 
-main{
+main {
 	margin: 0 auto;
 	max-width: 1200px;
 	width: 100%;
 }
 
-@media (max-width : 800px){
+@media (max-width: 800px) {
 	main {
 		max-width: 700px;
 	}
 }
 
-@media (max-width : 400px) {
+@media (max-width: 400px) {
 	main {
 		max-width: 350px;
 	}
@@ -52,13 +52,13 @@ main{
 }
 
 body::-webkit-scrollbar {
-    width: 12px;
+	width: 12px;
 }
-  
+
 body::-webkit-scrollbar-track {
-    background: var(--color-main);
+	background: var(--color-main);
 }
-  
+
 body::-webkit-scrollbar-thumb {
-    background: #666666;
+	background: #666666;
 }
