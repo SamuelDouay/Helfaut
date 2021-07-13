@@ -15,8 +15,8 @@ export class PratiqueComponent extends Component {
 					'Horaire de la mairie',
 					'Salle multifonction',
 					'Services',
-					'Ecoles',
-					'Economie',
+					'Écoles',
+					'Économie',
 					'Cimetière',
 				],
 				onglet

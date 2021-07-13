@@ -226,7 +226,8 @@ li a {
 
 	#menu_navigation {
 		flex-direction: column;
-		margin-top: 5px;
+		align-items: center;
+		margin-top: 125px;
 	}
 
 	.menu_nav_page > a {
@@ -243,12 +244,14 @@ li a {
 		width: 50%;
 		margin: 0 auto;
 		margin-top: 3px;
+		margin-bottom: 5px;
 		position: relative;
 	}
 
 	.menu_nav_page li {
 		height: 10px;
 		position: relative;
+		margin-bottom: 5px;
 	}
 
 	.menu_nav_page li a {
@@ -257,10 +260,6 @@ li a {
 
 	#menu_home,
 	#menu_theme {
-		display: none;
-	}
-
-	.menu_nav_page:hover ul {
 		display: none;
 	}
 }

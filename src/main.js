@@ -38,11 +38,14 @@ function changemenu() {
 		document
 			.querySelector('#croix img')
 			.setAttribute('src', '/images/croix.svg');
+		document.querySelector('#header').style.height = '350px';
+
 		menu = true;
 	} else {
 		document.querySelector('#menu_header').style.display = 'none';
 		document.querySelector('#header_title').style.height = '100%';
 		document.querySelector('#header_title').style.opacity = '1';
+		document.querySelector('#header').style.height = '150px';
 		document
 			.querySelector('#croix img')
 			.setAttribute('src', '/images/humburger.svg');

@@ -17,23 +17,33 @@ export default class Router {
 				else if (index > 4 && index != 5) index = index - 5;
 
 				if (window.matchMedia('(max-width : 400px)').matches) {
-					document.querySelector('#menu_header').style.display = 'none';
-					document
-						.querySelector('#croix img')
-						.setAttribute('src', '/images/humburger.svg');
-					document.querySelector('#header_title').style.height = '100%';
-				}
-				this.navigate(
-					e.currentTarget.getAttribute('href'),
-					index - 1 === -1 ? index : index - 1
-				);
-				if (window.matchMedia('(max-width : 400px)').matches) {
-					document.querySelector('#menu_header').style.display = 'none';
-					document.querySelector('#header_title').style.opacity = '1';
-					document
-						.querySelector('#croix img')
-						.setAttribute('src', '/images/humburger.svg');
-					document.querySelector('#header_title').style.height = '100%';
+					if (index === 2) {
+						document.querySelectorAll('.menu_nav_page > a').forEach(element => {
+							if (link === element) {
+								element.nextElementSibling.style.display = 'block';
+							} else if (element.nextElementSibling != null) {
+								element.nextElementSibling.style.display = 'none';
+							}
+						});
+					} else {
+						document.querySelector('#menu_header').style.display = 'none';
+						document.querySelector('.menu_nav_page ul').style.display = 'none';
+						document.querySelector('#header_title').style.opacity = '1';
+						document
+							.querySelector('#croix img')
+							.setAttribute('src', '/images/humburger.svg');
+						document.querySelector('#header_title').style.height = '100%';
+						document.querySelector('#header').style.height = '150px';
+						this.navigate(
+							e.currentTarget.getAttribute('href'),
+							index === 1 ? 1 : index - 2
+						);
+					}
+				} else {
+					this.navigate(
+						e.currentTarget.getAttribute('href'),
+						index - 1 === -1 ? index : index - 1
+					);
 				}
 			});
 		});

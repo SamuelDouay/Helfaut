@@ -31,6 +31,8 @@
   },
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.14.2",
+    "@sentry/browser": "^6.9.0",
+    "@sentry/tracing": "^6.9.0",
     "serve": "^11.3.2"
   }
 }
