@@ -1,9 +1,12 @@
 import Router from './Router';
 
-let dark = true;
-let menu = false;
+let dark,
+	menu = false;
 window.onload = () => {
 	window.scrollTo(0, 0);
+	matchMedia('(prefers-color-scheme: dark)').matches
+		? (dark = false)
+		: (dark = true);
 	changeColor();
 };
 

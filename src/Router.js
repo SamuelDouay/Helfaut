@@ -42,7 +42,7 @@ export default class Router {
 				} else {
 					this.navigate(
 						e.currentTarget.getAttribute('href'),
-						index - 1 === -1 ? index : index - 1
+						index - 1 === -1 ? index : index - 2
 					);
 				}
 			});
