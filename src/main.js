@@ -41,7 +41,7 @@ function changemenu() {
 		document
 			.querySelector('#croix img')
 			.setAttribute('src', '/images/croix.svg');
-		document.querySelector('#header').style.height = '625px';
+		document.querySelector('#header').style.height = '400px';
 
 		menu = true;
 	} else {

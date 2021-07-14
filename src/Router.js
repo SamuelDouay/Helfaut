@@ -11,13 +11,14 @@ export default class Router {
 		this.#menuNavigation.querySelectorAll('a').forEach((link, index) => {
 			link.addEventListener('click', e => {
 				e.preventDefault();
-				if (index > 16) index = index - 15;
-				else if (index > 15) index = index - 14;
-				else if (index > 8) index = index - 8;
-				else if (index > 4 && index != 5) index = index - 5;
+				const avant = index;
+				if (index > 17) index = index - 15;
+				else if (index > 16) index = index - 14;
+				else if (index > 9) index = index - 8;
+				else if (index > 4 && index != 6) index = index - 5;
 
 				if (window.matchMedia('(max-width : 400px)').matches) {
-					if (index === 2) {
+					if (index === 2 || avant === 17) {
 						document.querySelectorAll('.menu_nav_page > a').forEach(element => {
 							if (link === element) {
 								element.nextElementSibling.style.display = 'block';
