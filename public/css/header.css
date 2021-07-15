@@ -12,7 +12,7 @@ header {
 	background-size: cover;
 	object-fit: cover;
 	background-position: 0% 41%;
-	transition: all 0.3 ease-out;
+	transition: all 1 ease-out;
 }
 
 #header {

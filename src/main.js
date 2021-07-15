@@ -43,10 +43,7 @@ window.addEventListener('scroll', e => {
 			document.querySelector('#contain_header_page_title').innerHTML =
 				'Acceuil';
 		}
-	} else if (
-		window.matchMedia('(max-width : 400px)').matches &&
-		window.scrollY === 0
-	) {
+	} else if (window.matchMedia('(max-width : 400px)').matches) {
 		document.querySelector('header').style.height = '150px';
 		document.querySelector('#header_title').style.height = '100%';
 	}
