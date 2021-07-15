@@ -32,6 +32,25 @@ function handleEventLog(e = null) {
 
 handleEventLog();
 window.addEventListener('log', handleEventLog);
+let test;
+window.addEventListener('scroll', e => {
+	e.preventDefault();
+	if (window.scrollY > 30 && window.matchMedia('(max-width : 400px)').matches) {
+		document.querySelector('header').style.height = '80px';
+		document.querySelector('#header_title').style.height = '60px';
+		if (document.querySelector('#helfaut_logo_header') != undefined) {
+			test = document.querySelector('#helfaut_logo_header').innerHTML;
+			document.querySelector('#contain_header_page_title').innerHTML =
+				'Acceuil';
+		}
+	} else if (
+		window.matchMedia('(max-width : 400px)').matches &&
+		window.scrollY === 0
+	) {
+		document.querySelector('header').style.height = '150px';
+		document.querySelector('#header_title').style.height = '100%';
+	}
+});
 
 function changemenu() {
 	if (!menu) {
