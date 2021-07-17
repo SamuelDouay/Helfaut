@@ -18,10 +18,15 @@ Router.initRouter(
 );
 
 function handleEventLog(e = null) {
-	const light_darck = document.querySelector('#theme_l_d');
-	light_darck.addEventListener('click', e => {
-		e.preventDefault();
-		changeColor();
+	const darkmode = [
+		document.querySelector('#theme_l_d'),
+		document.querySelector('#darkmode_phone'),
+	];
+	darkmode.forEach(element => {
+		element.addEventListener('click', e => {
+			e.preventDefault();
+			changeColor();
+		});
 	});
 	const menu_click = document.querySelector('#croix');
 	menu_click.addEventListener('click', e => {
@@ -32,14 +37,13 @@ function handleEventLog(e = null) {
 
 handleEventLog();
 window.addEventListener('log', handleEventLog);
-let test;
+
 window.addEventListener('scroll', e => {
 	e.preventDefault();
 	if (window.scrollY > 30 && window.matchMedia('(max-width : 400px)').matches) {
 		document.querySelector('header').style.height = '80px';
 		document.querySelector('#header_title').style.height = '60px';
 		if (document.querySelector('#helfaut_logo_header') != undefined) {
-			test = document.querySelector('#helfaut_logo_header').innerHTML;
 			document.querySelector('#contain_header_page_title').innerHTML =
 				'Acceuil';
 		}
@@ -90,6 +94,11 @@ function darkMode() {
 	document
 		.querySelector('#home_header')
 		.setAttribute('src', '/images/home_white.svg');
+
+	document
+		.querySelector('#darkmode_phone img')
+		.setAttribute('src', '/images/moon_light.svg');
+
 	document.querySelectorAll('nav img').forEach(e => {
 		e.setAttribute('background', '#fff');
 	});
@@ -108,6 +117,9 @@ function lightMode() {
 	document
 		.querySelector('#home_header')
 		.setAttribute('src', '/images/home.svg');
+	document
+		.querySelector('#darkmode_phone img')
+		.setAttribute('src', '/images/moon_darck.svg');
 	document.documentElement.style.setProperty('--color-main', color_light[0]);
 	document.documentElement.style.setProperty('--color-seg', color_light[1]);
 	document.documentElement.style.setProperty('--color-ter', color_light[2]);
