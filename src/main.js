@@ -50,6 +50,10 @@ window.addEventListener('scroll', e => {
 	} else if (window.matchMedia('(max-width : 400px)').matches) {
 		document.querySelector('header').style.height = '150px';
 		document.querySelector('#header_title').style.height = '100%';
+		if (window.location.href.charAt(window.location.href.length - 1) === '/') {
+			document.querySelector('#contain_header_page_title').innerHTML =
+				'<img src="/images/baniere_helfaut.png" alt="logo helfaut" id="helfaut_logo_header" />';
+		}
 	}
 });
 
